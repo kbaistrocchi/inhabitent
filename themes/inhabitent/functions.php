@@ -23,6 +23,7 @@ function inhabitent_files() {
 
     // load fonts
     wp_enqueue_style('fonts', "https://fonts.googleapis.com/css?family=Lato&display=swap");
+    wp_enqueue_style('custom-fa', "https://use.fontawesome.com/releases/v5.8.2/css/all.css");
 };
 
 add_action('wp_enqueue_scripts', 'inhabitent_files');
