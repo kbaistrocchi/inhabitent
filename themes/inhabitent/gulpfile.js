@@ -59,12 +59,13 @@ gulp.task('browser-sync', function() {
   const files = [
     './build/css/*.css',
     './build/js/*.js',
+    './sass/**/*.scss',
     './*.php',
     './**/*.php'
   ];
 
   browserSync.init(files, {
-    proxy: 'localhost:8888/boilerplate-theme'
+    proxy: 'localhost:8888/inhabitent-site'
   });
 
   gulp.watch(files).on('change', browserSync.stream);
@@ -73,7 +74,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('watch', function(done) {
   gulp.watch('js/*.js', gulp.series('scripts'));
-  gulp.watch('sass/*.scss', gulp.series('sass'));
+  gulp.watch('sass/**/*.scss', gulp.series('sass'));
   done()
 });
 
