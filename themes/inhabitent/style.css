@@ -100,5 +100,11 @@ table {
 html {
   font-family: 'Merriweather light'; }
 
+footer {
+  height: 400px;
+  background-image: url("assets/images/dark-wood@2x.png");
+  background-size: contain;
+  color: #fff; }
+
 body {
   background: lightcoral; }
