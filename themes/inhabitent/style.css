@@ -122,17 +122,18 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 47px;
-  line-height: 2rem; }
+  line-height: 2.5rem; }
 
 .company-info {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  max-width: 75%; }
   .company-info h3 {
     color: #d99054; }
   .company-info ul li {
     display: inline;
-    padding: 0 1px; }
+    padding: 0 4px; }
   .company-info a {
     color: #fff; }
 
@@ -143,11 +144,15 @@ footer {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  min-width: 200px;
+  padding-right: 7%; }
   .contact-info .fa-envelope {
     padding-right: 7px; }
   .contact-info .fa-phone {
     padding-left: 7px; }
+  .contact-info .fab {
+    font-size: 1.1em; }
 
 footer .hours {
   display: -webkit-box;
@@ -156,12 +161,16 @@ footer .hours {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  min-width: 300px; }
   footer .hours span {
     font-family: 'Merriweather bold'; }
 
 .logo-text-wrapper img {
   width: 200px; }
+
+.copyright {
+  text-align: center; }
 
 body {
   background: lightcoral; }
