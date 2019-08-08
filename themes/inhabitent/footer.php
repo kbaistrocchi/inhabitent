@@ -25,7 +25,7 @@ wp_footer();
         
 
         <div class="logo-text-wrapper">
-            <img src="images/logos/inhabitent-logo-full.svg">
+            <img src="../../images/logos/inhabitent-logo-text.svg">
             <img src="images/about-hero.jpg" alt="inhabitent logo and store name">
         </div>
     </div>

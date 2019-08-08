@@ -17,6 +17,13 @@ footer {
     h3 {
         color: $orange-onbrand;
     };
+    ul li {
+        display: inline;
+        padding: 0 1px;
+    };
+    a {
+        color: #fff;
+    }
 }
 
 .contact-info {

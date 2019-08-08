@@ -13,11 +13,16 @@ if( have_posts() ) :   // checks if posts are available if true, on to loop
     <!-- end of wp loop -->
     <?php endwhile; ?>
 
+    
+
 <?php the_posts_navigation(); ?> <!-- if too much content to load on page - can change amount in settings -->
 
 <?php else : ?>
         <p>No posts found</p>
 <?php endif; ?>
+
+<!-- call sidebar -->
+<?php dynamic_sidebar('sidebar-1'); ?>
 
 <?php get_footer(); ?>
 
