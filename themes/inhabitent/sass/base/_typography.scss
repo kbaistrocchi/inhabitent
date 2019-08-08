@@ -74,5 +74,14 @@
 
   html {
       font-family: 'Merriweather light';
+      font-size: $base-font-size;
+  }
+
+  h1, h2, h3, h4, h5 {
+      font-family: 'Novecento';
+  }
+
+  h3 {
+      font-size: 1.2rem;
   }
   

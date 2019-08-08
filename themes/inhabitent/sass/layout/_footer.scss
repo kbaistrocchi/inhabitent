@@ -1,6 +1,37 @@
 footer {
-    height: 400px;
-    background-image: url('assets/images/dark-wood@2x.png');
+    height: 300px;
+    background-image: url('images/dark-wood@2x.png');
     background-size: contain;
     color: #fff;
+}
+
+.footer-content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 47px;
+    
+}
+
+.company-info {
+    display: flex;
+    h3 {
+        color: $orange-onbrand;
+    };
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer .hours {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text-wrapper {
+    img {
+        width: 200px;
+    }
 }

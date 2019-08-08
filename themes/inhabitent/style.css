@@ -98,13 +98,57 @@ table {
   font-style: normal; }
 
 html {
-  font-family: 'Merriweather light'; }
+  font-family: 'Merriweather light';
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Novecento'; }
+
+h3 {
+  font-size: 1.2rem; }
 
 footer {
-  height: 400px;
-  background-image: url("assets/images/dark-wood@2x.png");
+  height: 300px;
+  background-image: url("images/dark-wood@2x.png");
   background-size: contain;
   color: #fff; }
+
+.footer-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 47px; }
+
+.company-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .company-info h3 {
+    color: #d99054; }
+
+.contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+footer .hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.logo-text-wrapper img {
+  width: 200px; }
 
 body {
   background: lightcoral; }
