@@ -6,15 +6,18 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent.svg"> -->
     <!-- make title dynamic - Grabs info from title in General settings-->
     <title><?php bloginfo('title'); ?></title>
 </head>
 <!-- add a diff class name depending on which page we're on -->
 <body <?php body_class(); ?>> 
+    <header>
+        <img src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent.svg" alt="tent logo">
+        <?php wp_nav_menu( array(
+            'theme_location' => 'primary'
+        )); ?>
+    </header>
 
-<?php wp_nav_menu( array(
-    'theme_location' => 'primary'
-));
-?>
- <h1><?php bloginfo('name'); ?>
+    <h1><?php bloginfo('name'); ?>
 

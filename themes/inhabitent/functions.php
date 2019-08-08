@@ -94,5 +94,13 @@ function inhabitent_login_logo_url_title() {
 
 add_filter('login_headertitle', 'inhabitent_login_logo_url_title');
 
+// // Favicon
+// function inhabitent_favicon() {
+//     // echo '<link rel="Shortcut Icon" type="image/x-icon" href="'.get_bloginfo('wpurl').'/fimages/logos/inhabitent-logo-tent.svg" />';
+//     echo "<link rel='shortcut icon' type='image/x-icon' href='"get_template_directory_uri()"/images/logos/inhabitent-logo-tent.svg">';
+// }
+
+// add_action('wp_head', 'inhabitent_favicon');
+
 
 ?>

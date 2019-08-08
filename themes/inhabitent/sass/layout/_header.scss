@@ -1,0 +1,19 @@
+header {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 1% 5%;
+    img {
+        width: 45px;
+    }
+    .menu {
+        width: 33%;
+    };
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+        text-transform: uppercase;
+    }
+}

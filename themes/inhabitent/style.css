@@ -108,6 +108,38 @@ h1, h2, h3, h4, h5 {
 h3 {
   font-size: 1.2rem; }
 
+a {
+  color: #248A83;
+  font-family: 'Novecento';
+  text-decoration: none; }
+  a:hover {
+    color: #d99054; }
+
+header {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 1% 5%; }
+  header img {
+    width: 45px; }
+  header .menu {
+    width: 33%; }
+  header .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-transform: uppercase; }
+
 footer {
   height: 300px;
   background-image: url("images/dark-wood@2x.png");
@@ -171,9 +203,3 @@ footer .hours {
 
 .copyright {
   text-align: center; }
-
-body {
-  background: lightcoral; }
-
-#login h1 a, .login h1 a {
-  width: 500px; }

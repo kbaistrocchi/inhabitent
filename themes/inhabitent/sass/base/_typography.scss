@@ -85,4 +85,13 @@
   h3 {
       font-size: 1.2rem;
   }
+
+  a {
+     color: $green-onbrand;
+     font-family: 'Novecento';
+     text-decoration: none;
+     &:hover {
+          color: $orange-onbrand;
+     };
+  }
   
