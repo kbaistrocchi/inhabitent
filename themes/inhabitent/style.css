@@ -99,10 +99,11 @@ table {
 
 html {
   font-family: 'Merriweather light';
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 1.75; }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Novecento'; }
+  font-family: 'Novecento demibold'; }
 
 h3 {
   font-size: 1.2rem; }
@@ -120,7 +121,8 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 47px; }
+  padding: 47px;
+  line-height: 2rem; }
 
 .company-info {
   display: -webkit-box;
@@ -142,6 +144,10 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  .contact-info .fa-envelope {
+    padding-right: 7px; }
+  .contact-info .fa-phone {
+    padding-left: 7px; }
 
 footer .hours {
   display: -webkit-box;
@@ -151,6 +157,8 @@ footer .hours {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  footer .hours span {
+    font-family: 'Merriweather bold'; }
 
 .logo-text-wrapper img {
   width: 200px; }

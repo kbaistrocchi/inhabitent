@@ -9,6 +9,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 47px;
+    line-height: 2rem;
     
 }
 
@@ -29,12 +30,21 @@ footer {
 .contact-info {
     display: flex;
     flex-direction: column;
+    .fa-envelope {
+        padding-right: 7px;
+    };
+    .fa-phone {
+        padding-left: 7px;
+    };
 
 }
 
 footer .hours {
     display: flex;
     flex-direction: column;
+    span {
+        font-family: 'Merriweather bold';
+    }
 }
 
 .logo-text-wrapper {
