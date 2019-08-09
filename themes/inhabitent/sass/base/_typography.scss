@@ -72,19 +72,32 @@
     font-style: normal;
   }
 
-  html {
-      font-family: 'Merriweather light';
-      font-size: $base-font-size;
-      line-height: 1.75;
+  body {
+     font-family: 'Merriweather light';
+     font-size: $base-font-size;
+     color: #404040;
   }
 
   h1, h2, h3, h4, h5 {
       font-family: 'Novecento demibold';
+      text-transform: uppercase;
+  }
+
+  h3, h4 {
+       letter-spacing: 0.1rem;
+  }
+
+  h2 {
+       font-size: 2.5rem;
   }
 
   h3 {
-      font-size: 1.2rem;
+      font-size: 1.8rem;
   }
+
+  h4 {
+     font-size: 1.2rem;
+ }
 
   a {
      color: $green-onbrand;
@@ -93,5 +106,10 @@
      &:hover {
           color: $orange-onbrand;
      };
+  }
+
+  p {
+     font-family: 'Merriweather light';
+     text-transform: none;
   }
   

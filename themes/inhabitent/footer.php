@@ -5,7 +5,7 @@ wp_footer();
     <div class='footer-content-wrapper'>
         <div class="company-info">
             <div class='contact-info'>
-                <h3>Contact Info</h3>
+                <h4>Contact Info</h4>
                 <p><i class="fas fa-envelope"></i>info@inhabitent.com</p>
                 <p><i class="fas fa-phone fa-flip-horizontal"></i>778-456-7891</p>
                 <ul>
@@ -16,7 +16,7 @@ wp_footer();
             </div>
 
             <div class='hours'>
-                <h3>Business Hours</h3>
+                <h4>Business Hours</h4>
                 <p><span>Monday-Friday:</span> 9am to 5pm</p>
                 <p><span>Saturday:</span> 10am to 2pm</p>
                 <p><span>Sunday:</span> Closed</p>

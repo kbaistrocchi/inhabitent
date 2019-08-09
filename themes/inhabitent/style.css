@@ -97,15 +97,25 @@ table {
   font-weight: bold;
   font-style: normal; }
 
-html {
+body {
   font-family: 'Merriweather light';
   font-size: 16px;
-  line-height: 1.75; }
+  color: #404040; }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Novecento demibold'; }
+  font-family: 'Novecento demibold';
+  text-transform: uppercase; }
+
+h3, h4 {
+  letter-spacing: 0.1rem; }
+
+h2 {
+  font-size: 2.5rem; }
 
 h3 {
+  font-size: 1.8rem; }
+
+h4 {
   font-size: 1.2rem; }
 
 a {
@@ -114,6 +124,14 @@ a {
   text-decoration: none; }
   a:hover {
     color: #d99054; }
+
+p {
+  font-family: 'Merriweather light';
+  text-transform: none; }
+
+body {
+  max-width: 1120px;
+  line-height: 1.75; }
 
 header {
   height: 30px;
@@ -161,7 +179,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   max-width: 75%; }
-  .company-info h3 {
+  .company-info h4 {
     color: #d99054; }
   .company-info ul li {
     display: inline;
@@ -203,3 +221,31 @@ footer .hours {
 
 .copyright {
   text-align: center; }
+
+.narrow-content-wrapper {
+  max-width: 700px;
+  margin: 0 auto; }
+  .narrow-content-wrapper h2, .narrow-content-wrapper h3 {
+    text-transform: uppercase; }
+  .narrow-content-wrapper h3 {
+    letter-spacing: 0.1rem; }
+
+.hero-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("images/about-hero.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100vw;
+  max-width: 1120px;
+  height: 747px;
+  margin-left: calc(-50vw + 50%); }
+  .hero-wrapper h2 {
+    color: #fff; }
