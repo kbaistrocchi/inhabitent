@@ -67,12 +67,12 @@ function inhabitent_login_logo() {
     ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
-            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg);
-		/* height:65px;
-		width:300px;
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text-dark.svg);
+		height:65px;
+		width:250px;
 		background-size: 320px 65px;
 		background-repeat: no-repeat;
-        	padding-bottom: 30px; */
+        	padding-bottom: 30px;
         }
     </style>
 <?php
@@ -92,11 +92,11 @@ function inhabitent_login_logo_url_title() {
     return "InhabiTent Camping Supply Co.";
 }
 
-add_filter('login_headertitle', 'inhabitent_login_logo_url_title');
+add_filter('login_title', 'inhabitent_login_logo_url_title');
 
 // // Favicon
 // function inhabitent_favicon() {
-//     // echo '<link rel="Shortcut Icon" type="image/x-icon" href="'.get_bloginfo('wpurl').'/fimages/logos/inhabitent-logo-tent.svg" />';
+//     // echo '<link rel="Shortcut Icon" type="image/x-icon" href="'.get_bloginfo('wpurl').'/images/logos/inhabitent-logo-tent.svg" />';
 //     echo "<link rel='shortcut icon' type='image/x-icon' href='"get_template_directory_uri()"/images/logos/inhabitent-logo-tent.svg">';
 // }
 
