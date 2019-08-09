@@ -224,11 +224,13 @@ footer .hours {
 
 .narrow-content-wrapper {
   max-width: 700px;
-  margin: 0 auto; }
+  margin: 0 auto 45px auto; }
   .narrow-content-wrapper h2, .narrow-content-wrapper h3 {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-align: center; }
   .narrow-content-wrapper h3 {
-    letter-spacing: 0.1rem; }
+    letter-spacing: 0.1rem;
+    margin: 15px 0; }
 
 .hero-wrapper {
   display: -webkit-box;
@@ -248,6 +250,7 @@ footer .hours {
   width: 100vw;
   max-width: 1120px;
   height: 747px;
-  margin-left: calc(-50vw + 50%); }
+  margin-left: calc(-50vw + 50%);
+  margin-bottom: 30px; }
   .hero-wrapper h2 {
     color: #fff; }

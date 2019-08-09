@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<?php
-echo "About Page";?> 
+<!-- <?php
+echo "About Page";?>  -->
 
 <main class="narrow-content-wrapper">  <?php 
     if( have_posts() ) : 
