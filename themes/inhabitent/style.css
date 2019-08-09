@@ -240,8 +240,10 @@ footer .hours {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("images/about-hero.jpg");
-  background-size: contain;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("images/about-hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/about-hero.jpg");
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
   width: 100vw;
   max-width: 1120px;
