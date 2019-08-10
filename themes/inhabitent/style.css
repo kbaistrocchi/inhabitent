@@ -55,6 +55,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  max-width: 1120px; }
+
 @font-face {
   font-family: 'Merriweather light';
   src: url("./fonts/merriweather-light-webfont.eot");
@@ -131,10 +134,12 @@ p {
 
 body {
   max-width: 1120px;
+  margin: 0 auto;
   line-height: 1.75; }
 
 header {
   height: 30px;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,7 +154,7 @@ header {
   header img {
     width: 45px; }
   header .menu {
-    width: 33%; }
+    min-width: 30%; }
   header .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -157,6 +162,8 @@ header {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     text-transform: uppercase; }
+    header .menu ul li {
+      padding-right: 10px; }
 
 footer {
   height: 300px;
@@ -168,6 +175,8 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

@@ -1,5 +1,6 @@
 header {
     height: 30px;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,11 +10,14 @@ header {
         width: 45px;
     }
     .menu {
-        width: 33%;
+        min-width: 30%;
     };
     .menu ul {
         display: flex;
         justify-content: space-around;
         text-transform: uppercase;
+        li {
+            padding-right: 10px;
+        }
     }
 }
