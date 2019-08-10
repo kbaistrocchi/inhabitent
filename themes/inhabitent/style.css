@@ -58,6 +58,10 @@ table {
 body {
   max-width: 1120px; }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 @font-face {
   font-family: 'Merriweather light';
   src: url("./fonts/merriweather-light-webfont.eot");
@@ -135,9 +139,14 @@ p {
 body {
   max-width: 1120px;
   margin: 0 auto;
-  line-height: 1.75; }
+  line-height: 1.75;
+  position: relative; }
 
-header {
+.header-green {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 30px;
   max-width: 100%;
   display: -webkit-box;
@@ -151,19 +160,52 @@ header {
           align-items: center;
   border-bottom: 1px solid #e1e1e1;
   padding: 1% 5%; }
-  header img {
+  .header-green img {
     width: 45px; }
-  header .menu {
+  .header-green .menu {
     min-width: 30%; }
-  header .menu ul {
+  .header-green .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     text-transform: uppercase; }
-    header .menu ul li {
+    .header-green .menu ul li {
       padding-right: 10px; }
+
+.header-white {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1% 5%; }
+  .header-white img {
+    width: 45px; }
+  .header-white .menu {
+    min-width: 30%; }
+  .header-white .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-transform: uppercase; }
+    .header-white .menu ul li {
+      padding-right: 10px; }
+  .header-white a {
+    color: white; }
 
 footer {
   height: 300px;
@@ -231,6 +273,9 @@ footer .hours {
 .copyright {
   text-align: center; }
 
+.header-green {
+  display: none; }
+
 .narrow-content-wrapper {
   max-width: 700px;
   margin: 0 auto 45px auto; }
@@ -257,7 +302,6 @@ footer .hours {
   background-position: center center;
   background-repeat: no-repeat;
   width: 100vw;
-  max-width: 1120px;
   height: 747px;
   margin-left: calc(-50vw + 50%);
   margin-bottom: 30px; }

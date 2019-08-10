@@ -12,12 +12,19 @@
 </head>
 <!-- add a diff class name depending on which page we're on -->
 <body <?php body_class(); ?>> 
-    <header>
+    <header class="header-green">
         <img src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent.svg" alt="tent logo">
         <?php wp_nav_menu( array(
             'theme_location' => 'primary'
         )); ?>
     </header>
 
-    <h1><?php bloginfo('name'); ?>
+    <header class="header-white">
+        <img src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent-white.svg" alt="tent logo">
+        <?php wp_nav_menu( array(
+            'theme_location' => 'primary'
+        )); ?>
+    </header>
+
+    <!-- <h1><?php bloginfo('name'); ?> -->
 

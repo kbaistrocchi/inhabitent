@@ -1,4 +1,8 @@
-header {
+.header-green {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 30px;
     max-width: 100%;
     display: flex;
@@ -20,4 +24,35 @@ header {
             padding-right: 10px;
         }
     }
+}
+
+.header-white {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+    img {
+        width: 45px;
+    }
+    .menu {
+        min-width: 30%;
+    };
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+        text-transform: uppercase;
+        li {
+            padding-right: 10px;
+        }
+    }
+    a {
+        color: white;
+    }
+   
 }
