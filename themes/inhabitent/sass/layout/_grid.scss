@@ -5,3 +5,8 @@ body {
     position: relative;
 }
 
+.page-template-default {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr minmax(200px, 20%);
+}

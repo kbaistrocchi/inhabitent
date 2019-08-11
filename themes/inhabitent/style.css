@@ -142,6 +142,11 @@ body {
   line-height: 1.75;
   position: relative; }
 
+.page-template-default {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr minmax(200px, 20%); }
+
 .header-green {
   position: absolute;
   top: 0;
