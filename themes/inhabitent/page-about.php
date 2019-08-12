@@ -8,6 +8,7 @@ echo "About Page";?>  -->
          while( have_posts() ) :
         the_post(); ?>
         <div class="hero-wrapper">
+            <?php the_post_thumbnail(); ?>
             <h1><?php the_title(); ?></h1>
         </div>         
         

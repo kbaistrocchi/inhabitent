@@ -32,6 +32,7 @@ add_action('wp_enqueue_scripts', 'inhabitent_files');
 // adds theme support, ex title and tag, featured img
 function inhabitent_features() {
     add_theme_support('post-thumbnails');
+    add_image_size('square', 250, 250, true);
     add_theme_support('title-tag');
     register_nav_menus( array(
         'primary' => 'Primary Menu',

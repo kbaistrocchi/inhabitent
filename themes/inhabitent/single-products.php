@@ -10,6 +10,8 @@ if( have_posts() ) :   // checks if posts are available if true, on to loop
 <h2><?php the_title(); ?></h2>
 <!-- use the custom fields plugin built in function -->
 <?php echo '$' . get_field('price'); ?>
+<?php the_content(); ?>
+<?php the_post_thumbnail(); ?>
 
     <!-- end of wp loop -->
     <?php endwhile; ?>
