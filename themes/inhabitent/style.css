@@ -148,7 +148,7 @@ body {
 .page-sidebar-content-wrapper {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr minmax(200px, 20%); }
+  grid-template-columns: 1fr minmax(300px, 20%); }
 
 .header-green, .header-white {
   height: 40px;
@@ -268,8 +268,7 @@ footer .hours {
   .wpcf7-form label input, .wpcf7-form label textarea {
     border: 1px solid #e1e1e1;
     padding: 4px 10px;
-    background: #f4f4f4;
-    margin-bottom: 20px; }
+    background: #f4f4f4; }
   .wpcf7-form label input {
     height: 30px;
     width: 350px; }
@@ -316,3 +315,5 @@ footer .hours {
 
 .page-content-wrapper {
   padding: 35px 5% 80px 5%; }
+  .page-content-wrapper h2, .page-content-wrapper h3, .page-content-wrapper p {
+    margin-bottom: 15px; }
