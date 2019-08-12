@@ -9,13 +9,11 @@
     img {
         width: 45px;
     }
-    .menu {
-        min-width: 30%;
-    };
-    .menu ul {
+    ul {
         display: flex;
         justify-content: space-around;
         text-transform: uppercase;
+        min-width: 30%;
         li {
             padding-right: 10px;
         }

@@ -9,7 +9,6 @@ if( have_posts() ) :   // checks if posts are available if true, on to loop
     the_post(); ?>          
 <h2><?php the_title(); ?></h2>
 <!-- use the custom fields plugin built in function -->
-<?php get_permalink(); ?>
 <?php echo '$' . get_field('price'); ?>
 
     <!-- end of wp loop -->

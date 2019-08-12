@@ -58,6 +58,42 @@ function inhabitent_sidebar_widget() {
     ));
 }
 
+// Initialize Custom Post-Type: Products
+
+function inhabitent_post_types() {
+    register_post_type('products', array(
+        'supports' => array('title', 'editor', 'thumbnail'),
+        'public' => true,
+        'show_in_rest' => true,
+        'has_archive' => true,
+        'labels' => array(
+            'name' => 'Products',
+            'add_new' => 'Add New Product',
+            'add_new_item' => 'Product',
+            'edit_item' => 'Edit Product',
+            'all_items' => 'All Products',
+            'singular_name' => 'Product'
+         ),
+         'menu_icon' => 'dashicons-cart'
+    ));
+}
+
+add_action('init', 'inhabitent_post_types');
+
+// Custom Taxonomies
+function inhabitent_register_taxonomies() {
+    register_taxonomy('product_type', 'products', array(   // 2nd param must relate to the post site name (above)
+        'show_in_rest' => true,
+        'hierarchical' => true,
+        'public' => true,
+        'labels' => array(
+            'name' => 'Product Types',
+            'singular_name' => 'Product Type'
+        )
+    ));
+}
+add_action('init', 'inhabitent_register_taxonomies');
+
 
 add_action('widgets_init', 'inhabitent_sidebar_widget');
 

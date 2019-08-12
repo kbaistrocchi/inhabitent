@@ -166,16 +166,15 @@ body {
   padding: 1% 5%; }
   .header-green img, .header-white img {
     width: 45px; }
-  .header-green .menu, .header-white .menu {
-    min-width: 30%; }
-  .header-green .menu ul, .header-white .menu ul {
+  .header-green ul, .header-white ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    text-transform: uppercase; }
-    .header-green .menu ul li, .header-white .menu ul li {
+    text-transform: uppercase;
+    min-width: 30%; }
+    .header-green ul li, .header-white ul li {
       padding-right: 10px; }
 
 .header-white {
