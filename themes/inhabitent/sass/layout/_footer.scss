@@ -16,10 +16,13 @@ footer {
 
 .company-info {
     display: flex;
-    max-width: 75%;
-    h4 {
+    max-width: 80%;
+    h3 {
         color: $orange-onbrand;
     };
+    p {
+        white-space: nowrap;
+    }
     ul li {
         display: inline;
         padding: 0 4px;
@@ -32,7 +35,7 @@ footer {
 .contact-info {
     display: flex;
     flex-direction: column;
-    min-width: 200px;
+    min-width: 210px;
     padding-right: 7%;
     .fa-envelope {
         padding-right: 7px;

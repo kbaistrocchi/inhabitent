@@ -8,7 +8,7 @@ echo "About Page";?>  -->
          while( have_posts() ) :
         the_post(); ?>
         <div class="hero-wrapper">
-            <h2><?php the_title(); ?></h2>
+            <h1><?php the_title(); ?></h1>
         </div>         
         
         <?php the_content(); ?>

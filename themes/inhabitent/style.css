@@ -113,17 +113,20 @@ h1, h2, h3, h4, h5 {
   font-family: 'Novecento demibold';
   text-transform: uppercase; }
 
-h3, h4 {
+h2, h3 {
   letter-spacing: 0.1rem; }
 
-h2 {
+h1 {
   font-size: 2.5rem; }
 
-h3 {
+h2 {
   font-size: 1.8rem; }
 
-h4 {
+h3 {
   font-size: 1.2rem; }
+
+h4 {
+  font-size: 1rem; }
 
 a {
   color: #248A83;
@@ -141,6 +144,11 @@ body {
   margin: 0 auto;
   line-height: 1.75;
   position: relative; }
+
+.page-sidebar-content-wrapper {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr minmax(200px, 20%); }
 
 .header-green, .header-white {
   height: 40px;
@@ -203,9 +211,11 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 75%; }
-  .company-info h4 {
+  max-width: 80%; }
+  .company-info h3 {
     color: #d99054; }
+  .company-info p {
+    white-space: nowrap; }
   .company-info ul li {
     display: inline;
     padding: 0 4px; }
@@ -220,7 +230,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 200px;
+  min-width: 210px;
   padding-right: 7%; }
   .contact-info .fa-envelope {
     padding-right: 7px; }
@@ -246,6 +256,9 @@ footer .hours {
 
 .copyright {
   text-align: center; }
+
+#sidebar {
+  padding: 35px auto; }
 
 .wpcf7-form label {
   font-family: 'Novecento';
@@ -274,11 +287,9 @@ footer .hours {
 .narrow-content-wrapper {
   max-width: 700px;
   margin: 0 auto 45px auto; }
-  .narrow-content-wrapper h2, .narrow-content-wrapper h3 {
-    text-transform: uppercase;
+  .narrow-content-wrapper h1, .narrow-content-wrapper h2 {
     text-align: center; }
-  .narrow-content-wrapper h3 {
-    letter-spacing: 0.1rem;
+  .narrow-content-wrapper h2 {
     margin: 15px 0; }
 
 .hero-wrapper {
@@ -300,7 +311,7 @@ footer .hours {
   height: 747px;
   margin-left: calc(-50vw + 50%);
   margin-bottom: 30px; }
-  .hero-wrapper h2 {
+  .hero-wrapper h1 {
     color: #fff; }
 
 .page-content-wrapper {

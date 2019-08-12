@@ -4,9 +4,11 @@ body {
     line-height: 1.75;
     position: relative;
 }
-// Adds sidebar grid template to all pages
-// .page-template-default {
-//     display: grid;
-//     grid-template-rows: 1fr;
-//     grid-template-columns: 1fr minmax(200px, 20%);
-// }
+
+
+// Add sidebar grid template to all page.phps
+.page-sidebar-content-wrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr minmax(200px, 20%);
+}
