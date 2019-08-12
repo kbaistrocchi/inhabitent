@@ -142,17 +142,8 @@ body {
   line-height: 1.75;
   position: relative; }
 
-.page-template-default {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr minmax(200px, 20%); }
-
-.header-green {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 30px;
+.header-green, .header-white {
+  height: 40px;
   max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,18 +156,18 @@ body {
           align-items: center;
   border-bottom: 1px solid #e1e1e1;
   padding: 1% 5%; }
-  .header-green img {
+  .header-green img, .header-white img {
     width: 45px; }
-  .header-green .menu {
+  .header-green .menu, .header-white .menu {
     min-width: 30%; }
-  .header-green .menu ul {
+  .header-green .menu ul, .header-white .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     text-transform: uppercase; }
-    .header-green .menu ul li {
+    .header-green .menu ul li, .header-white .menu ul li {
       padding-right: 10px; }
 
 .header-white {
@@ -184,33 +175,11 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 30px;
-  max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1% 5%; }
-  .header-white img {
-    width: 45px; }
-  .header-white .menu {
-    min-width: 30%; }
-  .header-white .menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    text-transform: uppercase; }
-    .header-white .menu ul li {
-      padding-right: 10px; }
+  border-bottom: none; }
   .header-white a {
     color: white; }
+    .header-white a:hover {
+      color: #d99054; }
 
 footer {
   height: 300px;
@@ -278,8 +247,29 @@ footer .hours {
 .copyright {
   text-align: center; }
 
-.header-green {
-  display: none; }
+.wpcf7-form label {
+  font-family: 'Novecento';
+  text-transform: uppercase; }
+  .wpcf7-form label span {
+    color: red; }
+  .wpcf7-form label input, .wpcf7-form label textarea {
+    border: 1px solid #e1e1e1;
+    padding: 4px 10px;
+    background: #f4f4f4;
+    margin-bottom: 20px; }
+  .wpcf7-form label input {
+    height: 30px;
+    width: 350px; }
+  .wpcf7-form label textarea {
+    height: 300px;
+    width: 700px; }
+
+.wpcf7-submit {
+  color: #fff;
+  background: #248A83;
+  width: 75px;
+  height: 30px;
+  text-transform: uppercase; }
 
 .narrow-content-wrapper {
   max-width: 700px;
@@ -312,3 +302,6 @@ footer .hours {
   margin-bottom: 30px; }
   .hero-wrapper h2 {
     color: #fff; }
+
+.page-content-wrapper {
+  padding: 35px 5% 80px 5%; }
