@@ -283,7 +283,24 @@ footer .hours {
   text-transform: uppercase; }
 
 .home-content-wrapper {
-  padding: 30px 55px 80px 55px; }
+  padding: 30px 55px 80px 55px;
+  border-right: 1px solid #e1e1e1; }
+
+.journal-post-head {
+  position: relative; }
+
+.journal-post-title {
+  position: absolute;
+  top: 33px;
+  color: #fff;
+  background: #248A83;
+  padding: 2% 3%;
+  max-width: 70%;
+  line-height: initial; }
+
+.journal-img-wrapper img {
+  max-width: 100%;
+  height: auto; }
 
 .narrow-content-wrapper {
   max-width: 700px;

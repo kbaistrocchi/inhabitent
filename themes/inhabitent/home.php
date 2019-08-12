@@ -10,15 +10,15 @@ into here. Know as the loop -->
             while( have_posts() ) :   // while there are posts, runs as many times as are posts
             the_post(); ?>          <!-- load all posts, needed to make loop run -->
 
-        <div class="journal-post-head" 
-            style="background-image: url(
-                <?php if ( has_post_thumbnail() ) : ?>
-                    /* <div class="featured-image-wrapper journal-img-wrapper"> */
-                        <?php the_post_thumbnail(); ?>
-                    </div>
-                <?php endif; ?>
-            )">
+        <div class="journal-post-head">
             <h2 class="journal-post-title"><?php the_title(); ?></h2>
+            <?php if ( has_post_thumbnail() ) : ?>
+                <div class="featured-image-wrapper journal-img-wrapper">
+                    <?php the_post_thumbnail(); ?>
+                </div>
+                <h4><?php echo get_the_date(); ?> / <?php echo get_comments_number(); ?> Comments / By <?php the_author(); ?></h4>
+            <?php endif; ?>
+           
         </div>
         
 

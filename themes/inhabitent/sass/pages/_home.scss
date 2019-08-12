@@ -1,3 +1,27 @@
 .home-content-wrapper {
     padding: 30px 55px 80px 55px;
+    border-right: $solid-border;
+}
+
+.journal-post-head {
+    position: relative;
+}
+
+.journal-post-title {
+    position: absolute;
+    top: 33px;
+    color: #fff;
+    background: $green-onbrand;
+    padding: 2% 3%;
+    max-width: 70%;
+    line-height: initial;
+
+}
+
+.journal-img-wrapper {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
 }
