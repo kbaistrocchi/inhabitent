@@ -30,7 +30,7 @@ function inhabitent_files() {
 add_action('wp_enqueue_scripts', 'inhabitent_files');
 
 // adds theme support, ex title and tag, featured img
-function inhabitant_features() {
+function inhabitent_features() {
     add_theme_support('post-thumbnails');
     add_theme_support('title-tag');
     register_nav_menus( array(
@@ -70,7 +70,7 @@ function inhabitent_login_logo() {
             background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text-dark.svg);
 		height:65px;
 		width:250px;
-		background-size: 320px 65px;
+		background-size: 250px 65px;
 		background-repeat: no-repeat;
         	padding-bottom: 30px;
         }

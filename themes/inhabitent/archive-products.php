@@ -13,7 +13,7 @@ into here. Know as the loop -->
         <div class="journal-post-head" 
             style="background-image: url(
                 <?php if ( has_post_thumbnail() ) : ?>
-                    /* <div class="featured-image-wrapper journal-img-wrapper"> */
+                    <div class="featured-image-wrapper journal-img-wrapper">
                         <?php the_post_thumbnail(); ?>
                     </div>
                 <?php endif; ?>
