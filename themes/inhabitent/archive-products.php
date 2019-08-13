@@ -1,4 +1,6 @@
-
+<?php 
+/* Template Name: Products Archive */
+?>
 <?php get_header(); ?>
 
 <section class="archive-product-header">

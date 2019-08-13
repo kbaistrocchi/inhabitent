@@ -133,7 +133,7 @@ a {
   font-family: 'Novecento';
   text-decoration: none; }
   a:hover {
-    color: #d99054; }
+    color: #2f1339; }
 
 p {
   font-family: 'Merriweather light';
@@ -282,6 +282,13 @@ footer .hours {
   height: 30px;
   text-transform: uppercase; }
 
+.link-buttons, .read-more-link {
+  color: #404040;
+  text-transform: uppercase; }
+  .link-buttons:hover, .read-more-link:hover {
+    color: #fff;
+    background: #248A83; }
+
 .home-content-wrapper {
   padding: 30px 55px 80px 55px;
   border-right: 1px solid #e1e1e1; }
@@ -315,14 +322,9 @@ footer .hours {
   display: block;
   width: 150px;
   text-align: center;
-  color: #404040;
-  text-transform: uppercase;
   padding: 1% 0;
   border: 1px solid #a1a1a1;
   margin: 20px 0 55px 0; }
-  .read-more-link:hover {
-    color: #fff;
-    background: #248A83; }
 
 .narrow-content-wrapper {
   max-width: 700px;
@@ -414,3 +416,58 @@ footer .hours {
   .product-info-container p {
     padding: 0 4px;
     white-space: nowrap; }
+
+.single-product-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 55px; }
+
+.single-product-img-wrapper {
+  height: auto;
+  width: 47%; }
+  .single-product-img-wrapper img {
+    height: auto;
+    width: 100%; }
+
+.single-product-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+  padding-left: 5%; }
+  .single-product-info h2 {
+    color: #d99054; }
+  .single-product-info span {
+    font-family: 'Novecento';
+    font-size: 1.4rem; }
+
+.product-social-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 1rem; }
+  .product-social-buttons li {
+    border: 1px solid #808080;
+    padding: 1% 5%;
+    margin-right: 6px; }
+  .product-social-buttons a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5% 19%; }
+    .product-social-buttons a i {
+      padding: 0 10%; }

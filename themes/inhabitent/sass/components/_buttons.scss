@@ -1,0 +1,8 @@
+.link-buttons {
+    color: $font-color;
+    text-transform: uppercase;
+    &:hover {
+        color: #fff;
+        background: $green;
+    }
+}

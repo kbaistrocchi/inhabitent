@@ -1,0 +1,52 @@
+.single-product-content {
+    display: flex;
+    margin: 40px 55px;
+}
+
+.single-product-img-wrapper {
+    height: auto;
+    width: 47%;
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.single-product-info {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding-left: 5%;
+    h2 {
+        color: $orange;
+    }
+    span { 
+        font-family: 'Novecento';
+        font-size: 1.4rem;
+    }
+}
+
+.product-social-buttons {
+    display: flex;
+    justify-content: flex-start;
+    // width: 70%;
+    margin-top: 1rem;
+    li {
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        border: 1px solid $medgrey;
+        // color: $font-color;
+        padding: 1% 5%;
+        margin-right: 6px;   
+    }
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5% 19%;
+        i {
+            padding: 0 10%;
+        }
+    }
+}
