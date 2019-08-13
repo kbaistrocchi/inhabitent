@@ -109,7 +109,7 @@ body {
   font-size: 16px;
   color: #404040; }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
   font-family: 'Novecento demibold';
   text-transform: uppercase; }
 
@@ -126,6 +126,10 @@ h3 {
   font-size: 1.2rem; }
 
 h4 {
+  font-size: 1rem; }
+
+h5 {
+  font-family: 'Novecento';
   font-size: 1rem; }
 
 a {
@@ -471,3 +475,11 @@ footer .hours {
     padding: 5% 19%; }
     .product-social-buttons a i {
       padding: 0 10%; }
+
+.single-journal-text p {
+  margin-top: 30px; }
+
+.post-categories {
+  display: inline; }
+  .post-categories li {
+    display: inline; }

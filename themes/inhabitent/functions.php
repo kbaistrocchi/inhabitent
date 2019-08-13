@@ -89,7 +89,25 @@ function inhabitent_post_types() {
          ),
          'menu_icon' => 'dashicons-cart'
     ));
+
+    // Initialize Custom Post-Type: Adventures
+    register_post_type('adventures', array(
+        'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'page-attributes'),
+        'public' => true,
+        'show_in_rest' => true,
+        'has_archive' => true,
+        'labels' => array(
+            'name' => 'Adventures',
+            'add_new' => 'Add New Adventure Post',
+            'add_new_item' => 'Adventure Post',
+            'edit_item' => 'Edit Adventure Post',
+            'all_items' => 'All Adventure Posts',
+            'singular_name' => 'Adventure'
+         ),
+         'menu_icon' => 'dashicons-location-alt',
+    ));
 }
+
 
 add_action('init', 'inhabitent_post_types');
 
@@ -106,6 +124,8 @@ function inhabitent_register_taxonomies() {
     ));
 }
 add_action('init', 'inhabitent_register_taxonomies');
+
+
 
 
 add_action('widgets_init', 'inhabitent_sidebar_widget');
