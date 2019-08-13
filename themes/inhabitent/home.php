@@ -16,14 +16,13 @@ into here. Know as the loop -->
                 <div class="featured-image-wrapper journal-img-wrapper">
                     <?php the_post_thumbnail(); ?>
                 </div>
-                <h4><?php echo get_the_date(); ?> / <?php echo get_comments_number(); ?> Comments / By <?php the_author(); ?></h4>
+                <h4><?php the_date('j F Y'); ?> / <?php echo get_comments_number(); ?> Comments / By <?php the_author(); ?></h4>
             <?php endif; ?>
            
         </div>
         
-
         <div class="journal-post-text">
-            <?php the_content(); ?>
+            <?php the_excerpt(); ?>
         </div>
        
 

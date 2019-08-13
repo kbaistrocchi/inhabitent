@@ -75,7 +75,7 @@
   body {
      font-family: 'Merriweather light';
      font-size: $base-font-size;
-     color: #404040;
+     color: $font-color;
   }
 
   h1, h2, h3, h4, h5 {
@@ -104,11 +104,11 @@
  }
 
   a {
-     color: $green-onbrand;
+     color: $green;
      font-family: 'Novecento';
      text-decoration: none;
      &:hover {
-          color: $orange-onbrand;
+          color: $orange;
      };
   }
 

@@ -44,7 +44,9 @@ function inhabitent_features() {
 // after_theme_setup, function_name
 add_action('after_setup_theme', 'inhabitent_features'); 
 
-// initialize sidebar
+
+// Initialize sidebar
+
 function inhabitent_sidebar_widget() {
     // us wp function which takes associative array as paramenter - see docs
     register_sidebar( array(
@@ -58,6 +60,16 @@ function inhabitent_sidebar_widget() {
         'after_title' => '</h2>'
     ));
 }
+
+// Modify 'Read More' Link
+
+function inhabitent_read_more_link($more) {
+    global $post;
+    return ' [...]<a class="read-more-link" href="' . get_permalink($post->ID) . '" >Read More <i class="fas fa-long-arrow-alt-right"></i></a>';
+}
+
+add_filter('excerpt_more', 'inhabitent_read_more_link');
+
 
 // Initialize Custom Post-Type: Products
 

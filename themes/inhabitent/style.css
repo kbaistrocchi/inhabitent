@@ -287,7 +287,16 @@ footer .hours {
   border-right: 1px solid #e1e1e1; }
 
 .journal-post-head {
-  position: relative; }
+  position: relative;
+  margin-bottom: 20px; }
+  .journal-post-head h4 {
+    background: #248A83;
+    color: #fff;
+    font-family: 'Novecento';
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    padding: 0 4%; }
 
 .journal-post-title {
   position: absolute;
@@ -301,6 +310,19 @@ footer .hours {
 .journal-img-wrapper img {
   max-width: 100%;
   height: auto; }
+
+.read-more-link {
+  display: block;
+  width: 150px;
+  text-align: center;
+  color: #404040;
+  text-transform: uppercase;
+  padding: 1% 0;
+  border: 1px solid #a1a1a1;
+  margin: 20px 0 55px 0; }
+  .read-more-link:hover {
+    color: #fff;
+    background: #248A83; }
 
 .narrow-content-wrapper {
   max-width: 700px;
