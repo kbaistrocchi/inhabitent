@@ -479,6 +479,10 @@ footer .hours {
 .single-journal-text p {
   margin-top: 30px; }
 
+.single-journal-text h5 {
+  display: inline-block;
+  margin-right: 25px; }
+
 .post-categories {
   display: inline; }
   .post-categories li {

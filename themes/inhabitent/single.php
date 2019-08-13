@@ -35,6 +35,9 @@
         <?php else : ?>
                 <p>No posts found</p>
         <?php endif; ?>
+        <?php comments_template(); ?>
+        <?php comment_form(); ?>
+       
     </section>
     
     <?php get_sidebar(); ?>
