@@ -1,6 +1,6 @@
 .single-product-content {
     display: flex;
-    margin: 40px 55px;
+    margin: 40px 55px 80px 55px;
 }
 
 .single-product-img-wrapper {
@@ -15,8 +15,8 @@
 .single-product-info {
     display: flex;
     flex-direction: column;
-    width: 45%;
-    padding-left: 5%;
+    width: 50%;
+    padding-left: 3%;
     h2 {
         color: $orange;
     }
@@ -26,27 +26,6 @@
     }
 }
 
-.product-social-buttons {
-    display: flex;
-    justify-content: flex-start;
-    // width: 70%;
-    margin-top: 1rem;
-    li {
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        border: 1px solid $medgrey;
-        // color: $font-color;
-        padding: 1% 5%;
-        margin-right: 6px;   
-    }
-    a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 5% 19%;
-        i {
-            padding: 0 10%;
-        }
-    }
+.product-social-media-bts {
+    margin-top: 20px;
 }

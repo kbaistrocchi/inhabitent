@@ -310,7 +310,7 @@ footer .hours {
     color: #fff;
     background: #248A83; }
 
-.home-content-wrapper {
+.posts-content-wrapper {
   padding: 30px 55px 80px 55px;
   border-right: 1px solid #e1e1e1; }
 
@@ -442,7 +442,7 @@ footer .hours {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 40px 55px; }
+  margin: 40px 55px 80px 55px; }
 
 .single-product-img-wrapper {
   height: auto;
@@ -459,48 +459,28 @@ footer .hours {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 45%;
-  padding-left: 5%; }
+  width: 50%;
+  padding-left: 3%; }
   .single-product-info h2 {
     color: #d99054; }
   .single-product-info span {
     font-family: 'Novecento';
     font-size: 1.4rem; }
 
-.product-social-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin-top: 1rem; }
-  .product-social-buttons li {
-    border: 1px solid #808080;
-    padding: 1% 5%;
-    margin-right: 6px; }
-  .product-social-buttons a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 5% 19%; }
-    .product-social-buttons a i {
-      padding: 0 10%; }
+.product-social-media-bts {
+  margin-top: 20px; }
 
 .single-journal-text p {
   margin-top: 30px; }
 
 .single-journal-text h5 {
   display: inline-block;
-  margin-right: 25px; }
+  margin: 20px 25px 0 0; }
 
 .post-categories {
   display: inline; }
   .post-categories li {
     display: inline; }
+
+.posts-content-wrapper .social-media-buttons {
+  margin-top: 20px; }

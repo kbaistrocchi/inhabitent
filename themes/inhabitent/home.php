@@ -3,7 +3,7 @@ into here. Know as the loop -->
 <?php get_header(); ?>
 
 <main class="page-sidebar-content-wrapper">
-    <section class="home-content-wrapper">
+    <section class="posts-content-wrapper">
         <?php
         if( have_posts() ) :   // checks if posts are available if true, on to loop
             // THE WP LOOP

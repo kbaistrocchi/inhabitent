@@ -4,7 +4,7 @@
     }
     h5 {
         display: inline-block;
-        margin-right: 25px;
+        margin: 20px 25px 0 0;
     }
 }
 
@@ -13,4 +13,8 @@
     li {
         display: inline;
     }
+}
+
+.posts-content-wrapper .social-media-buttons {
+    margin-top: 20px;
 }
