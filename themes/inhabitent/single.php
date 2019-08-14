@@ -46,7 +46,7 @@
        
     </section>
     
-    <?php get_sidebar(); ?>
+    <?php dynamic_sidebar('sidebar-1'); ?>
     
 </main>
 

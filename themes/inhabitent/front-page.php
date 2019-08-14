@@ -1,28 +1,29 @@
-<!-- wp goes into database, locates title, content and outputs
-into here. Know as the loop -->
-<?php get_header(); ?>
+<?php get_header('dark'); ?>
 
-<?php
-if( have_posts() ) :   // checks if posts are available if true, on to loop
-    // THE WP LOOP
-    while( have_posts() ) :   // while there are posts, runs as many times as are posts
-    the_post(); ?>          <!-- load all posts, needed to make loop run -->
-<h2><?php the_title(); ?></h2>
-<?php the_content(); ?>
+<div class="front-pg-wrapper">
+    <?php
+    if( have_posts() ) :   
+        while( have_posts() ) :   
+        the_post(); ?> 
+        <?php $postID = get_the_ID(); ?>
+        <div class="front-hero-wrapper" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('<?php echo get_the_post_thumbnail_url( $postID, 'full'); ?>')">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" alt="inhabitent circular logo">
+        </div>
+        <?php the_content(); ?>
 
-    <!-- end of wp loop -->
-    <?php endwhile; ?>
+        <?php endwhile; ?>
 
-    
+        
 
-<?php the_posts_navigation(); ?> <!-- if too much content to load on page - can change amount in settings -->
+    <?php the_posts_navigation(); ?> 
 
-<?php else : ?>
-        <p>No posts found</p>
-<?php endif; ?>
+    <?php else : ?>
+            <p>No posts found</p>
+    <?php endif; ?>
 
-<!-- call sidebar -->
-<?php dynamic_sidebar('sidebar-1'); ?>
+</div>
+
+
 
 <?php get_footer(); ?>
 

@@ -11,18 +11,18 @@
 }
 
 .hero-wrapper {
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/about-hero.jpg');
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    margin-left: calc(-50vw + 50%);
-    margin-bottom: 30px;
+    @include hero;
+    // color: #fff;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // background-size: cover;
+    // background-position: center bottom;
+    // background-repeat: no-repeat;
+    // width: 100vw;
+    // height: 100vh;
+    // margin-left: calc(-50vw + 50%);
+    // margin-bottom: 30px;
 
 }
 

@@ -36,7 +36,7 @@ into here. Know as the loop -->
         <?php endif; ?>
     </section>
     
-    <?php get_sidebar(); ?>
+    <?php dynamic_sidebar('sidebar-1'); ?>
     
 </main>
 

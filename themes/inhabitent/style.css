@@ -481,3 +481,23 @@ footer .hours {
 
 .posts-content-wrapper .social-media-buttons {
   margin-top: 20px; }
+
+.front-hero-wrapper {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  margin-left: calc(-50vw + 50%);
+  margin-bottom: 30px;
+  background-position: center center; }
