@@ -22,25 +22,45 @@
             <p>No posts found</p>
     <?php endif; ?>
 
+
+
+    <section class="inhab-journal-teaser">
     <?php
+        // Custom loop variable
+        $args = array(
+            'post_type' => 'posts',  // specific posts to grab (posts, products or adventures)
+            'numberposts' => 3,
+            'order' => 'ASC'
+        );
 
-// Custom loop variable
-$args = array(
-    'post_type' => 'products',  // specific posts to grab (posts, products or adventures)
-    'numberposts' => 3,
+        $posts = get_posts($args);
+        // use a for each to loop through array saved in $posts
+        // first parameter is array, second is each item in array
+        foreach($posts as $post) :
+            setup_postdata($post);
+            the_title();
+            the_content();
+        endforeach;
+
+        ?>
+
+
+        <!-- WP_Query Loop -->
+<!-- <?php 
+$blogs = new WP_Query(array(
+    'post_type' => 'products',
+    'posts_per_page' => 3,  // -1 displays all 
+    'order_by' => 'date',
     'order' => 'ASC'
-);
-
-$posts = get_posts($args);
-// use a for each to loop through array saved in $posts
-// first parameter is array, second is each item in array
-foreach($posts as $post) :
-    setup_postdata($post);
+));
+// -> arrow grabs a particular property (like dot notation)
+while($blogs->have_posts()) :
+    echo $blogs->the_post();  
     the_title();
-    the_content();
-endforeach;
-
-?>
+endwhile;
+?> -->
+    </section>
+   
 
 </div>
 

@@ -386,9 +386,13 @@ footer .hours {
     margin-bottom: 15px; }
 
 .archive-product-header {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 35px; }
   .archive-product-header h2 {
-    margin: 20px 0; }
+    margin: 35px 0 10px 0; }
+  .archive-product-header a {
+    text-transform: uppercase;
+    padding: 0 15px; }
 
 .archive-products-wrapper {
   display: grid;

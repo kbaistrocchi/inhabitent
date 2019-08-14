@@ -5,6 +5,21 @@
 
 <section class="archive-product-header">
     <h2>Shop Stuff</h2>
+    <!-- Custom loop -->
+    <?php 
+    $terms = get_terms(array(
+        'taxonomy' => 'product_type',
+        'hide_empty' => 0 // shows empty catagories
+    ));
+
+    foreach($terms as $term) :
+       ?> <a href="<?php echo get_term_link($term); ?>"> <?php echo $term->name; ?> </a>
+       <?php ;
+    endforeach;
+
+    ?>
+
+
 </section>
 
 <div class="archive-products-wrapper">
