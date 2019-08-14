@@ -29,7 +29,7 @@ wp_footer();
         </div>
     </div>
     
-    <p class="copyright">COPYRIGHT &copy 2019 InhabiTENT</p>
+    <p class="copyright">COPYRIGHT &copy 2019 inhabiTENT</p>
 
     
     

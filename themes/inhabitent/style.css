@@ -390,8 +390,8 @@ footer .hours {
 .archive-products-wrapper {
   display: grid;
   grid-auto-rows: 285px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2%;
+  grid-template-columns: repeat(4, calc(25% - 15px));
+  grid-gap: 20px;
   border-top: 1px dashed #c8c8c8;
   margin: 0 55px 85px 55px;
   padding-top: 55px; }

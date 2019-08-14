@@ -8,8 +8,8 @@
 .archive-products-wrapper {
     display: grid;
     grid-auto-rows: 285px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2%;
+    grid-template-columns: repeat(4, calc(25% - 15px));
+    grid-gap: 20px;
     border-top: $dashed-border;
     margin: 0 55px 85px 55px;
     padding-top: 55px;
