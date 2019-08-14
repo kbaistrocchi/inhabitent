@@ -356,6 +356,7 @@ footer .hours {
     margin: 15px 0; }
 
 .hero-wrapper {
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,17 +366,13 @@ footer .hours {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("images/about-hero.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/about-hero.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: center bottom;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 747px;
+  height: 100vh;
   margin-left: calc(-50vw + 50%);
   margin-bottom: 30px; }
-  .hero-wrapper h1 {
-    color: #fff; }
 
 .page-content-wrapper {
   padding: 35px 55px 80px 55px; }
