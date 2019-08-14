@@ -41,8 +41,12 @@
             <button class="btn-social-media"><a href="#"><i class="fab fa-twitter"></i>Tweet</a></button>
             <button class="btn-social-media"><a href="#"><i class="fab fa-pinterest"></i>Pin</a></button>
         </div>
-        <?php comments_template(); ?>
-        <?php comment_form(); ?>
+        <section class="comments">
+            <h2><?php echo get_comments_number(); ?> comments</h2>
+            <?php comments_template(); ?>
+            <?php comment_form(); ?>
+        </section>
+        
        
     </section>
     

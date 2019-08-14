@@ -1,5 +1,6 @@
 <?php get_header('dark'); ?>
 
+
 <div class="front-pg-wrapper">
     <?php
     if( have_posts() ) :   
@@ -20,6 +21,26 @@
     <?php else : ?>
             <p>No posts found</p>
     <?php endif; ?>
+
+    <?php
+
+// Custom loop variable
+$args = array(
+    'post_type' => 'products',  // specific posts to grab (posts, products or adventures)
+    'numberposts' => 3,
+    'order' => 'ASC'
+);
+
+$posts = get_posts($args);
+// use a for each to loop through array saved in $posts
+// first parameter is array, second is each item in array
+foreach($posts as $post) :
+    setup_postdata($post);
+    the_title();
+    the_content();
+endforeach;
+
+?>
 
 </div>
 

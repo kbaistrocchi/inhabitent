@@ -286,6 +286,12 @@ footer .hours {
   height: 30px;
   text-transform: uppercase; }
 
+.comments h2 {
+  margin-top: 50px; }
+
+.comment-author img {
+  border-radius: 50%; }
+
 .btn-social-media {
   white-space: nowrap;
   border-radius: 1px;
