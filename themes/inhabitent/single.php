@@ -35,6 +35,12 @@
         <?php else : ?>
                 <p>No posts found</p>
         <?php endif; ?>
+
+        <div class="social-media-buttons">
+            <button class="btn-social-media"><a href="#"><i class="fab fa-facebook-f"></i>Like</a></button>
+            <button class="btn-social-media"><a href="#"><i class="fab fa-twitter"></i>Tweet</a></button>
+            <button class="btn-social-media"><a href="#"><i class="fab fa-pinterest"></i>Pin</a></button>
+        </div>
         <?php comments_template(); ?>
         <?php comment_form(); ?>
        

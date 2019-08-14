@@ -286,6 +286,23 @@ footer .hours {
   height: 30px;
   text-transform: uppercase; }
 
+.btn-social-media {
+  white-space: nowrap;
+  border-radius: 1px;
+  border: 2px solid #a1a1a1;
+  padding: 2% 3%;
+  text-transform: uppercase; }
+  .btn-social-media i {
+    padding-right: 8px; }
+  .btn-social-media a {
+    color: #404040; }
+  .btn-social-media:hover {
+    background-color: #248A83;
+    border-color: #248A83;
+    cursor: pointer; }
+    .btn-social-media:hover a {
+      color: #fff; }
+
 .link-buttons, .read-more-link {
   color: #404040;
   text-transform: uppercase; }

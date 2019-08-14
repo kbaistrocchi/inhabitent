@@ -1,3 +1,26 @@
+.btn-social-media {
+    white-space: nowrap;
+    border-radius: 1px;
+    border: 2px solid $litegrey;
+    padding: 2% 3%;
+    text-transform: uppercase;
+    i {
+        padding-right: 8px;
+    }
+    a {
+        color: $font-color; 
+     }
+    &:hover {
+        background-color: $green;
+        border-color: $green;
+        cursor: pointer;
+        a { 
+            color: #fff;
+        }
+    }
+}
+
+
 .link-buttons {
     color: $font-color;
     text-transform: uppercase;
@@ -6,3 +29,4 @@
         background: $green;
     }
 }
+
