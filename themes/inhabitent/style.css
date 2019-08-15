@@ -619,6 +619,8 @@ a.stuff-btn {
   .journal-info h3 {
     color: #248A83;
     line-height: 1.5rem; }
+    .journal-info h3 a {
+      font-family: 'Novecento demibold'; }
 
 .read-entry-btn {
   width: 140px;
