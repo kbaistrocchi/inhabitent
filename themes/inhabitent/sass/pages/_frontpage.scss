@@ -9,6 +9,8 @@
     margin: 57px 0;
 }
 
+// SHOP STUFF
+
 .shop-stuff-menu {
     display: flex;
 }
@@ -55,12 +57,16 @@ a.stuff-btn {
 
 .inhab-journal-teaser{
     display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .journal-card {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 32%;
+    height: 395px;
+    border: $solid-border
 }
 
 .journal-card-img-wrapper{
@@ -72,4 +78,28 @@ a.stuff-btn {
         height: 235px;
         object-fit: cover;
     }
+}
+
+.journal-info {
+    display: flex;
+    flex-direction: column;
+    border-top: $thick-border;
+    position: relative;
+    height: 158px;
+    padding: 4%;
+    p {
+        font-size: 0.8rem;
+    }
+    h3 {
+        color: $green;
+        line-height: 1.5rem;
+    }
+}
+
+.read-entry-btn {
+    @extend .read-more-btn;
+    width: 140px;
+    padding: 6px 0;
+    position: absolute;
+    bottom: 13px;
 }

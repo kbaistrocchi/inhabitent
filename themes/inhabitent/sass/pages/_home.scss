@@ -36,11 +36,9 @@
 }
 
 .read-more-link {
-    @extend .link-buttons;  // from _buttons.scss
+    @extend .read-more-btn;  // from _buttons.scss
     display: block;
     width: 150px;
-    text-align: center;
     padding: 1% 0;
-    border: 1px solid $litegrey;
     margin: 20px 0 55px 0;
 }

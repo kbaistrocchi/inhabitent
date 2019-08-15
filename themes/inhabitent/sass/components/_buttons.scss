@@ -23,9 +23,11 @@
 }
 
 
-.link-buttons {
+.read-more-btn {
     color: $font-color;
     text-transform: uppercase;
+    border: 1px solid $medgrey;
+    text-align: center;
     &:hover {
         color: #fff;
         background: $green;

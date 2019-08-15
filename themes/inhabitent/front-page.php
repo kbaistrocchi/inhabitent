@@ -76,10 +76,12 @@
                     <div class="journal-info">
                         <p><?php the_date('j F Y'); ?> / <?php echo get_comments_number(); ?> Comments</p>
                         <h3><?php the_title(); ?></h3>
-                        <a href="<?php the_guid(); ?>" class="read-entry">Read Entry</a>
+                        <a href="<?php the_guid(); ?>" class="read-entry-btn">Read Entry</a>
                     </div>
                 </div>
             <?php endforeach; ?>
+    </section>
+    <h1 class="front-header">Latest Adventures</h1>
                
          
 
@@ -95,7 +97,7 @@
             echo $stuff->the_post(); 
         endwhile;
         ?> -->
-    </section>
+    
    
 
 </div>

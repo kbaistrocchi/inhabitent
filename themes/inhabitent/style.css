@@ -318,10 +318,12 @@ footer .hours {
     .btn-social-media:hover a {
       color: #fff; }
 
-.link-buttons, .read-more-link {
+.read-more-btn, .read-more-link, .read-entry-btn {
   color: #404040;
-  text-transform: uppercase; }
-  .link-buttons:hover, .read-more-link:hover {
+  text-transform: uppercase;
+  border: 1px solid #808080;
+  text-align: center; }
+  .read-more-btn:hover, .read-more-link:hover, .read-entry-btn:hover {
     color: #fff;
     background: #248A83; }
 
@@ -357,9 +359,7 @@ footer .hours {
 .read-more-link {
   display: block;
   width: 150px;
-  text-align: center;
   padding: 1% 0;
-  border: 1px solid #a1a1a1;
   margin: 20px 0 55px 0; }
 
 .narrow-content-wrapper {
@@ -575,7 +575,11 @@ a.stuff-btn {
 .inhab-journal-teaser {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .journal-card {
   display: -webkit-box;
@@ -585,7 +589,9 @@ a.stuff-btn {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 30%; }
+  width: 32%;
+  height: 395px;
+  border: 1px solid #e1e1e1; }
 
 .journal-card-img-wrapper {
   width: 100%;
@@ -595,3 +601,27 @@ a.stuff-btn {
     height: 235px;
     -o-object-fit: cover;
        object-fit: cover; }
+
+.journal-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 5px solid #e1e1e1;
+  position: relative;
+  height: 158px;
+  padding: 4%; }
+  .journal-info p {
+    font-size: 0.8rem; }
+  .journal-info h3 {
+    color: #248A83;
+    line-height: 1.5rem; }
+
+.read-entry-btn {
+  width: 140px;
+  padding: 6px 0;
+  position: absolute;
+  bottom: 13px; }
