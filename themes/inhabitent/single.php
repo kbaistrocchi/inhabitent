@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-<main class="page-sidebar-content-wrapper">
+<main class="page-sidebar-content-wrapper all-page-wrapper">
     <section class="posts-content-wrapper">
         <?php
         if( have_posts() ) :   // checks if posts are available if true, on to loop

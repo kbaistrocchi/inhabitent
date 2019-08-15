@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="page-sidebar-content-wrapper">
+<main class="page-sidebar-content-wrapper all-page-wrapper">
     <section class="page-content-wrapper">
         <?php
         if( have_posts() ) :   // checks if pages are available if true, on to loop

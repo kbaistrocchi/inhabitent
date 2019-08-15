@@ -2,3 +2,52 @@
     @include hero;
     background-position: center center;
 }
+
+.front-header {
+    font-family: 'Novecento';
+    text-align: center;
+    margin: 57px 0;
+}
+
+.shop-stuff-menu {
+    display: flex;
+}
+
+.stuff-product-card {
+    border: $solid-border;
+    border-top: $thick-border;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    max-width: calc(25% - 1.5%);
+    height: 270px;
+    padding: 1%;
+    p {
+        margin: 5% 0;
+    }
+    &:hover {
+        border-color: $orange;
+    }
+}
+
+.margin-right-card {
+    margin-right: 20px;
+}
+
+.stuff-icon {
+    width: 70px;
+}
+
+a.stuff-btn {
+    background: $green;
+    color: #fff;
+    text-transform: uppercase;
+    width: 130px;
+    white-space: nowrap;
+    padding: 5px;
+    &:hover {
+        background: darken($green, 10%);
+    }
+}

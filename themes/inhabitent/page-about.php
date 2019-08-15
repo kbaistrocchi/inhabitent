@@ -1,7 +1,7 @@
 <?php get_header('dark'); ?>
 
 
-<main class="narrow-content-wrapper">  <?php 
+<main class="narrow-content-wrapper all-page-wrapper">  <?php 
     if( have_posts() ) : 
          while( have_posts() ) :
         the_post(); ?>

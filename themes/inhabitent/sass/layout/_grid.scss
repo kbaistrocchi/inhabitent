@@ -1,8 +1,15 @@
 body {
-    max-width: 1120px;
+    // max-width: 1120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0 auto;
     line-height: 1.75;
     position: relative;
+}
+
+.all-page-wrapper {
+    margin: 0 5%;
 }
 
 
