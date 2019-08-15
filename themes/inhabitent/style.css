@@ -571,3 +571,27 @@ a.stuff-btn {
   padding: 5px; }
   a.stuff-btn:hover {
     background: #19625d; }
+
+.inhab-journal-teaser {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.journal-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%; }
+
+.journal-card-img-wrapper {
+  width: 100%;
+  height: 235px; }
+  .journal-card-img-wrapper img {
+    width: 100%;
+    height: 235px;
+    -o-object-fit: cover;
+       object-fit: cover; }

@@ -56,33 +56,32 @@
 
     </section>
 
-
     <h1 class="front-header">Inhabitent Journal</h1>
     <section class="inhab-journal-teaser">
+        <?php
+            // Custom Loop for Journal Entries
+            $args = array(
+                'post_type' => 'post',
+                'numberposts' => 3,
+                'order' => 'ASC'
+            );
+            $posts = get_posts($args);
 
-    
-    <?php
-        // Custom loop variable
-        $args = array(
-            'post_type' => 'post',
-            'numberposts' => 3,
-            'order' => 'ASC'
-        );
-
-         // use a for each to loop through array saved in $posts
-        // first parameter is array, second is each item in array
-
-        $posts = get_posts($args);
-
-        print_r($posts);
-       
-        foreach($posts as $post) :
-            setup_postdata($post);
-            the_title();
-            the_content();
-        endforeach;
-
-        ?>
+            foreach($posts as $post) :
+                setup_postdata($post); ?> 
+                <div class="journal-card">
+                    <div class="journal-card-img-wrapper">
+                        <?php echo get_the_post_thumbnail($post->ID); ?>
+                    </div>
+                    <div class="journal-info">
+                        <p><?php the_date('j F Y'); ?> / <?php echo get_comments_number(); ?> Comments</p>
+                        <h3><?php the_title(); ?></h3>
+                        <a href="<?php the_guid(); ?>" class="read-entry">Read Entry</a>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+               
+         
 
 
  <!-- WP_Query Loop -->
@@ -93,7 +92,7 @@
         ));
         // -> arrow grabs a particular property (like dot notation)
         while($stuff->have_posts()) :
-            echo $stuff->the_post();  
+            echo $stuff->the_post(); 
         endwhile;
         ?> -->
     </section>
