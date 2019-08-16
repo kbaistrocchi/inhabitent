@@ -163,6 +163,13 @@ body {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr minmax(300px, 20%); }
 
+.adventure-grid {
+  display: grid;
+  grid-auto-rows: 500px;
+  grid-template-columns: repeat(2, calc(50% - 10px));
+  grid-gap: 20px;
+  margin-bottom: 120px; }
+
 .header-green, .header-white {
   height: 40px;
   max-width: 100%;
@@ -394,12 +401,14 @@ footer .hours {
   .page-content-wrapper h2, .page-content-wrapper h3, .page-content-wrapper p {
     margin-bottom: 15px; }
 
-.archive-product-header {
+.archive-header {
   text-align: center;
-  margin-bottom: 35px; }
-  .archive-product-header h2 {
-    margin: 35px 0 10px 0; }
-  .archive-product-header a {
+  margin: 35px 0 45px 0;
+  border-bottom: 1px dashed #c8c8c8;
+  padding-bottom: 55px; }
+  .archive-header h1 {
+    margin-bottom: 10px; }
+  .archive-header a {
     text-transform: uppercase;
     padding: 0 15px; }
 
@@ -408,9 +417,7 @@ footer .hours {
   grid-auto-rows: 285px;
   grid-template-columns: repeat(4, calc(25% - 15px));
   grid-gap: 20px;
-  border-top: 1px dashed #c8c8c8;
-  margin-bottom: 85px;
-  padding-top: 55px; }
+  margin-bottom: 85px; }
 
 .indi-product-wrapper {
   display: -webkit-box;
@@ -627,3 +634,11 @@ a.stuff-btn {
   padding: 6px 0;
   position: absolute;
   bottom: 13px; }
+
+.adventure-block {
+  width: 100%; }
+  .adventure-block img {
+    width: 100%;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover; }

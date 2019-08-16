@@ -1,8 +1,10 @@
-.archive-product-header {
+.archive-header {
     text-align: center;
-    margin-bottom: 35px;
-    h2 {
-        margin: 35px 0 10px 0;
+    margin: 35px 0 45px 0;
+    border-bottom: $dashed-border;
+    padding-bottom: 55px;
+    h1 {
+        margin-bottom: 10px;
     }
     a {
         text-transform: uppercase;
@@ -15,9 +17,7 @@
     grid-auto-rows: 285px;
     grid-template-columns: repeat(4, calc(25% - 15px));
     grid-gap: 20px;
-    border-top: $dashed-border;
     margin-bottom: 85px;
-    padding-top: 55px;
 }
 .indi-product-wrapper {
     display: flex;

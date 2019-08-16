@@ -92,7 +92,7 @@ function inhabitent_post_types() {
 
     // Initialize Custom Post-Type: Adventures
     register_post_type('adventures', array(
-        'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'page-attributes'),
+        'supports' => array('title', 'editor', 'thumbnail'),
         'public' => true,
         'show_in_rest' => true,
         'has_archive' => true,

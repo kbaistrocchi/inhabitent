@@ -4,8 +4,8 @@
 <?php get_header(); ?>
 
 <div class="all-page-wrapper">
-    <section class="archive-product-header">
-        <h2>Shop Stuff</h2>
+    <section class="archive-header">
+        <h1>Shop Stuff</h1>
         <!-- Custom loop -->
         <?php 
         $terms = get_terms(array(
