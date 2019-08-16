@@ -309,10 +309,11 @@ footer .hours {
   border-radius: 50%; }
 
 .btn-social-media {
+  font-size: 0.9rem;
   white-space: nowrap;
   border-radius: 1px;
-  border: 2px solid #a1a1a1;
-  padding: 2% 3%;
+  border: 2px solid #808080;
+  padding: 9px 23px;
   text-transform: uppercase; }
   .btn-social-media i {
     padding-right: 8px; }
@@ -666,6 +667,10 @@ a.stuff-btn {
       .adventure-cta h1 a:hover {
         color: #f0e4d1; }
 
+.adventure-heading {
+  line-height: 1.2;
+  letter-spacing: 0.13rem; }
+
 .read-adventure-btn {
   display: block;
   border: 1px solid #fff;
@@ -679,3 +684,17 @@ a.stuff-btn {
     background: #248A83;
     border-color: #248A83;
     color: #fff; }
+
+.lrg-img-wrapper img {
+  width: 100%;
+  height: auto; }
+
+.adventure-content {
+  max-width: 750px;
+  margin: 50px auto 75px auto; }
+  .adventure-content h3 {
+    font-family: 'Novecento';
+    letter-spacing: unset;
+    margin: 15px 0 20px 0; }
+  .adventure-content p {
+    margin-bottom: 20px; }

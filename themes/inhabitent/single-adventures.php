@@ -1,25 +1,35 @@
-<!-- wp goes into database, locates title, content and outputs
-into here. Know as the loop -->
-<?php get_header(); ?>
-<div class="all-page-wrapper">
-    <h1>Kay</h1>
-</div>
+
+<?php get_header('dark'); ?>
+
 <?php
-if( have_posts() ) :   // checks if posts are available if true, on to loop
-    // THE WP LOOP
-    while( have_posts() ) :   // while there are posts, runs as many times as are posts
-    the_post(); ?>          <!-- load all posts, needed to make loop run -->
-<h2><?php the_title(); ?></h2>
-<?php the_content(); ?>
+if( have_posts() ) : 
+    while( have_posts() ) :   
+    the_post(); ?>
+    <div class="lrg-img-wrapper">
+        <?php the_post_thumbnail(); ?> 
+    </div>
+    
 
-    <!-- end of wp loop -->
-    <?php endwhile; ?>
+    <div class="adventure-content">
+        <h1 class="adventure-heading"><?php the_title(); ?></h1>
+        <h3>By <?php the_author(); ?></h3>
+        <?php the_content(); ?>
 
-<?php the_posts_navigation(); ?> <!-- if too much content to load on page - can change amount in settings -->
+            <!-- end of wp loop -->
+            <?php endwhile; ?>
 
-<?php else : ?>
-        <p>No posts found</p>
-<?php endif; ?>
+
+        <?php else : ?>
+                <p>No posts found</p>
+        <?php endif; ?>
+        <div class="social-media-buttons">
+            <button class="btn-social-media"><a href="#"><i class="fab fa-facebook-f"></i>Like</a></button>
+            <button class="btn-social-media"><a href="#"><i class="fab fa-twitter"></i>Tweet</a></button>
+            <button class="btn-social-media"><a href="#"><i class="fab fa-pinterest"></i>Pin</a></button>
+        </div>
+
+    </div>        
+
 
 <?php get_footer(); ?>
 

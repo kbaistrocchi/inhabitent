@@ -12,7 +12,7 @@
                 <?php the_post_thumbnail(); ?>
                 <div class="overlay"></div>
                 <div class="adventure-cta">
-                    <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                    <h1 class="adventure-heading"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                     <a href="<?php the_permalink(); ?>" class="read-adventure-btn">Read More</a>
                 </div>
             </div>        

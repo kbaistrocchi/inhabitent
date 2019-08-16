@@ -1,10 +1,11 @@
 
 // Social media buttons in single products and single posts
 .btn-social-media {
+    font-size: 0.9rem;
     white-space: nowrap;
     border-radius: 1px;
-    border: 2px solid $litegrey;
-    padding: 2% 3%;
+    border: 2px solid $medgrey;
+    padding: 9px 23px;
     text-transform: uppercase;
     i {
         padding-right: 8px;
