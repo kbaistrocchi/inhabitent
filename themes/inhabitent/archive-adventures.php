@@ -10,8 +10,11 @@
             the_post(); ?>  
             <div class="adventure-block">
                 <?php the_post_thumbnail(); ?>
-                <!-- <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                <h3><a href="<?php the_permalink(); ?>" class="read-entry-btn">Read More</a></h3> -->
+                <div class="overlay"></div>
+                <div class="adventure-cta">
+                    <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                    <a href="<?php the_permalink(); ?>" class="read-adventure-btn">Read More</a>
+                </div>
             </div>        
         
 
