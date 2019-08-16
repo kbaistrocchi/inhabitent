@@ -1,11 +1,11 @@
-
+<?php get_header(); ?>
 <?php get_header('dark'); ?>
 
 <?php
 if( have_posts() ) : 
     while( have_posts() ) :   
     the_post(); ?>
-    <div class="lrg-img-wrapper">
+    <div class="lrg-img-wrapper hide-fixed-header">
         <?php the_post_thumbnail(); ?> 
     </div>
     

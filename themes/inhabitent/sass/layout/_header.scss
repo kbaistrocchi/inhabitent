@@ -1,11 +1,14 @@
 .header-green {
     height: 40px;
-    max-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: $solid-border;
-    padding: 1% 5%;
+    padding: 1% 55px;
+    position: fixed;
+    z-index: 2;
+    background-color: hsla(0,0%,100%,.85);
     img {
         width: 45px;
     }
@@ -20,12 +23,20 @@
     }
 }
 
+// move to appropriate place later
+.hide-fixed-header {
+    position: relative;
+    z-index: 3;
+}
+
 .header-white {
     @extend .header-green;
+    background-color: unset;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 4;
     border-bottom: none;
     a {
         color: white;

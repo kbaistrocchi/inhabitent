@@ -156,7 +156,7 @@ body {
   position: relative; }
 
 .all-page-wrapper {
-  margin: 0 5%; }
+  margin: 40px 55px 0 40px; }
 
 .page-sidebar-content-wrapper {
   display: grid;
@@ -172,7 +172,7 @@ body {
 
 .header-green, .header-white {
   height: 40px;
-  max-width: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,7 +183,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid #e1e1e1;
-  padding: 1% 5%; }
+  padding: 1% 55px;
+  position: fixed;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.85); }
   .header-green img, .header-white img {
     width: 45px; }
   .header-green ul, .header-white ul {
@@ -197,11 +200,17 @@ body {
     .header-green ul li, .header-white ul li {
       padding-right: 10px; }
 
+.hide-fixed-header {
+  position: relative;
+  z-index: 3; }
+
 .header-white {
+  background-color: unset;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 4;
   border-bottom: none; }
   .header-white a {
     color: white; }
@@ -223,7 +232,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 47px;
+  padding: 55px;
   line-height: 2.5rem; }
 
 .company-info {
@@ -509,6 +518,9 @@ footer .hours {
 .posts-content-wrapper .social-media-buttons {
   margin-top: 20px; }
 
+.front-pg-wrapper {
+  margin: 0 5%; }
+
 .front-hero-wrapper {
   color: #fff;
   display: -webkit-box;
@@ -652,24 +664,22 @@ a.stuff-btn {
   position: absolute;
   top: 0; }
 
+.adventure-heading {
+  line-height: 1.2;
+  letter-spacing: 0.13rem; }
+
 .adventure-cta {
   position: absolute;
   top: 60px;
   padding: 0 30px; }
   .adventure-cta h1 {
     font-size: 3rem;
-    line-height: 3.8rem;
-    text-transform: unset;
-    letter-spacing: 2px; }
+    text-transform: unset; }
     .adventure-cta h1 a {
       color: #fff;
       font-family: 'Merriweather light'; }
       .adventure-cta h1 a:hover {
         color: #f0e4d1; }
-
-.adventure-heading {
-  line-height: 1.2;
-  letter-spacing: 0.13rem; }
 
 .read-adventure-btn {
   display: block;

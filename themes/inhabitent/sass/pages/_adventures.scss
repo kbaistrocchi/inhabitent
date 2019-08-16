@@ -18,15 +18,18 @@
     top: 0;
 }
 
+.adventure-heading {
+    line-height: 1.2;
+    letter-spacing: 0.13rem;
+}
+
 .adventure-cta {
     position: absolute;
     top: 60px;
     padding: 0 30px;
     h1 {
         font-size: 3rem;
-        line-height: 3.8rem;
         text-transform: unset;
-        letter-spacing: 2px;
         a {
             color: #fff;  
             font-family: 'Merriweather light';
@@ -35,11 +38,6 @@
             }
         }
     }
-}
-
-.adventure-heading {
-    line-height: 1.2;
-    letter-spacing: 0.13rem;
 }
 
 .read-adventure-btn {
