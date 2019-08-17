@@ -1,0 +1,29 @@
+
+// ADVENTURES
+
+.adventure-heading {
+    line-height: 1.2;
+    letter-spacing: 0.13rem;
+}
+.overlay {
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+
+.adventure-cta {
+    position: absolute;
+    padding: 0 30px;
+    h1 {
+        text-transform: unset;
+        a {
+            color: #fff;  
+            font-family: 'Merriweather light';
+            &:hover {
+                color: $yellow;
+            }
+        }
+    }
+}

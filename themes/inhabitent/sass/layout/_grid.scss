@@ -20,6 +20,19 @@ body {
     grid-template-columns: 1fr minmax(300px, 20%);
 }
 
+// Grid layout for Front Page - Adventures
+.adventures-teaser {
+    display: grid;
+    grid-gap: 20px;
+
+    grid-template: 240px 240px / 50% 25% 25%;
+    grid-template-areas: 'post-1 post-2 post-2'
+                         'post-1 post-3 post-4';
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+
 // Grid layout for Adventure Archive Page
 .adventure-grid {
     display: grid;

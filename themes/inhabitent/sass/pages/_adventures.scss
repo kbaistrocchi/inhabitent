@@ -11,47 +11,48 @@
 }
 
 .overlay {
-    width: 100%;
+    // width: 100%;
     height: 500px;
-    background: rgba(0,0,0,0.4);
-    position: absolute;
-    top: 0;
+    // background: rgba(0,0,0,0.4);
+    // overflow: hidden;
+    // position: absolute;
+    // top: 0;
 }
 
-.adventure-heading {
-    line-height: 1.2;
-    letter-spacing: 0.13rem;
-}
+// .adventure-heading {
+//     line-height: 1.2;
+//     letter-spacing: 0.13rem;
+// }
 
 .adventure-cta {
-    position: absolute;
+    // position: absolute;
     top: 60px;
-    padding: 0 30px;
+    // padding: 0 30px;
     h1 {
         font-size: 3rem;
-        text-transform: unset;
-        a {
-            color: #fff;  
-            font-family: 'Merriweather light';
-            &:hover {
-                color: $yellow;
-            }
-        }
+    //     text-transform: unset;
+    //     a {
+    //         color: #fff;  
+    //         font-family: 'Merriweather light';
+    //         &:hover {
+    //             color: $yellow;
+    //         }
+    //     }
     }
 }
 
 .read-adventure-btn {
-    display: block;
-    border: 1px solid #fff;
+    // display: block;
+    // border: 1px solid #fff;
     margin-top: 45px;
-    width: 150px;
-    padding: 5px 0;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    &:hover {
-        background: $green;
-        border-color: $green;
-        color: #fff;
-    }
+    // width: 150px;
+    // padding: 5px 0;
+    // text-align: center;
+    // text-transform: uppercase;
+    // color: #fff;
+    // &:hover {
+    //     background: $green;
+    //     border-color: $green;
+    //     color: #fff;
+    // }
 }

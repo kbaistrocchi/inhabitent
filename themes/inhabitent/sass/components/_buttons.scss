@@ -23,6 +23,7 @@
     }
 }
 
+// Read More Buttons for Journal Posts and Cards
 
 .read-more-btn {
     color: $font-color;
@@ -32,6 +33,23 @@
     &:hover {
         color: #fff;
         background: $green;
+    }
+}
+
+// Adventure Read More Button
+
+.read-adventure-btn {
+    display: block;
+    border: 1px solid #fff;
+    width: 150px;
+    padding: 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    &:hover {
+        background: $green;
+        border-color: $green;
+        color: #fff;
     }
 }
 

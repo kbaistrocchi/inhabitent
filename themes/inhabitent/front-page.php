@@ -17,11 +17,13 @@
 
         
 
-    <?php the_posts_navigation(); ?> 
+    <!-- <?php the_posts_navigation(); ?>  -->
 
     <?php else : ?>
             <p>No posts found</p>
     <?php endif; ?>
+
+    <!-- Shop Stuff Section -->
 
     <h1 class="front-header">Shop Stuff</h1>
     <section class="shop-stuff-menu">
@@ -32,7 +34,6 @@
                 'hide_empty' => 0 // shows empty catagories
             ));
         ?>
-        
 
         <div class="stuff-product-card margin-right-card">
             <img src="<?php echo get_template_directory_uri(); ?>/images/product-type-icons/do.svg"  class="stuff-icon" alt="do stuff map icon">
@@ -56,6 +57,8 @@
         </div>
 
     </section>
+
+    <!-- Latest Journal Entries -->
 
     <h1 class="front-header">Inhabitent Journal</h1>
     <section class="inhab-journal-teaser">
@@ -82,7 +85,33 @@
                 </div>
             <?php endforeach; ?>
     </section>
+
+    <!-- Latest Adventures Section -->
     <h1 class="front-header">Latest Adventures</h1>
+    <section class="adventures-teaser">
+        <?php 
+            $adventure = new WP_Query( array(
+                'post_type' => 'adventures',
+                'posts_per_page' => 4,
+            ));
+            // var_dump($adventure);
+            $i = 1;
+            while($adventure->have_posts()) :
+                $adventure->the_post();
+                ?> 
+                <div class="adventure-card position-<?php echo $i; ?>">
+                    <?php the_post_thumbnail(); ?>
+                    <div class="overlay adventure-overlay"></div>
+                    <div class="adventure-cta">
+                        <h1 class="adventure-heading"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                        <a href="<?php the_permalink(); ?>" class="read-adventure-btn">Read More</a>
+                    </div>
+                </div> 
+                
+                <?php
+                $i++;
+            endwhile; ?>
+    </section>
                
          
 

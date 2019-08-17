@@ -28,8 +28,8 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    max-width: calc(25% - 1.5%);
-    height: 270px;
+    width: calc(25% - 1.5%);
+    max-height: 300px;
     padding: 1%;
     p {
         margin: 5% 0;
@@ -110,4 +110,45 @@ a.stuff-btn {
     padding: 6px 0;
     position: absolute;
     bottom: 13px;
+}
+
+// Adventures Teaser
+.adventure-card {
+    width: 100%;
+    position: relative;
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.position-1 {
+    grid-area: post-1;
+    img, .adventure-overlay {
+        height: 500px;
+    }
+}
+.position-2 {
+    grid-area: post-2;
+    .adventure-heading {
+        font-size: 2rem;
+    }
+}
+.position-3 {
+    grid-area: post-3;
+}
+.position-4 {
+    grid-area: post-4;
+}
+
+.position-2, .position-3, .position-4 {
+    img, .adventure-overlay {
+        height: 240px;
+    }
+}
+
+.position-3, .position-4 {
+    .adventure-heading {
+        font-size: 1.5rem;
+    }
 }

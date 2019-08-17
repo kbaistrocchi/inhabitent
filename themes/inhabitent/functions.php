@@ -32,7 +32,7 @@ add_action('wp_enqueue_scripts', 'inhabitent_files');
 // adds theme support, ex title and tag, featured img
 function inhabitent_features() {
     add_theme_support('post-thumbnails');
-    add_image_size('square', 250, 250, true);
+    // add_image_size('square', 250, 250, true);
     add_theme_support('title-tag');
     register_nav_menus( array(
         'primary' => 'Primary Menu',
@@ -125,9 +125,7 @@ function inhabitent_register_taxonomies() {
 }
 add_action('init', 'inhabitent_register_taxonomies');
 
-
-
-
+// Add sidebar
 add_action('widgets_init', 'inhabitent_sidebar_widget');
 
 
@@ -163,13 +161,12 @@ function inhabitent_login_logo_url_title() {
 
 add_filter('login_title', 'inhabitent_login_logo_url_title');
 
-// // Favicon
-// function inhabitent_favicon() {
-//     // echo '<link rel="Shortcut Icon" type="image/x-icon" href="'.get_bloginfo('wpurl').'/images/logos/inhabitent-logo-tent.svg" />';
-//     echo "<link rel='shortcut icon' type='image/x-icon' href='"get_template_directory_uri()"/images/logos/inhabitent-logo-tent.svg">';
-// }
+// Set Favicon
+function inhabitent_favicon() {
+	echo '<link rel="shortcut icon" type="image/png" href="'. get_template_directory_uri().'/images/logos/inhabitent-logo-tent-icon.ico">';
+}
 
-// add_action('wp_head', 'inhabitent_favicon');
+add_action('wp_head', 'inhabitent_favicon');
 
 
 ?>

@@ -163,6 +163,14 @@ body {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr minmax(300px, 20%); }
 
+.adventures-teaser {
+  display: grid;
+  grid-gap: 20px;
+  grid-template: 240px 240px / 50% 25% 25%;
+  grid-template-areas: 'post-1 post-2 post-2' 'post-1 post-3 post-4';
+  width: 100%;
+  margin-bottom: 120px; }
+
 .adventure-grid {
   display: grid;
   grid-auto-rows: 500px;
@@ -343,6 +351,41 @@ footer .hours {
   .read-more-btn:hover, .read-more-link:hover, .read-entry-btn:hover {
     color: #fff;
     background: #248A83; }
+
+.read-adventure-btn {
+  display: block;
+  border: 1px solid #fff;
+  width: 150px;
+  padding: 5px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff; }
+  .read-adventure-btn:hover {
+    background: #248A83;
+    border-color: #248A83;
+    color: #fff; }
+
+.adventure-heading {
+  line-height: 1.2;
+  letter-spacing: 0.13rem; }
+
+.overlay {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  position: absolute;
+  top: 0; }
+
+.adventure-cta {
+  position: absolute;
+  padding: 0 30px; }
+  .adventure-cta h1 {
+    text-transform: unset; }
+    .adventure-cta h1 a {
+      color: #fff;
+      font-family: 'Merriweather light'; }
+      .adventure-cta h1 a:hover {
+        color: #f0e4d1; }
 
 .posts-content-wrapper {
   padding: 30px 5% 80px 0;
@@ -568,8 +611,8 @@ footer .hours {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  max-width: calc(25% - 1.5%);
-  height: 270px;
+  width: calc(25% - 1.5%);
+  max-height: 300px;
   padding: 1%; }
   .stuff-product-card p {
     margin: 5% 0; }
@@ -648,6 +691,36 @@ a.stuff-btn {
   position: absolute;
   bottom: 13px; }
 
+.adventure-card {
+  width: 100%;
+  position: relative; }
+  .adventure-card img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.position-1 {
+  grid-area: post-1; }
+  .position-1 img, .position-1 .adventure-overlay {
+    height: 500px; }
+
+.position-2 {
+  grid-area: post-2; }
+  .position-2 .adventure-heading {
+    font-size: 2rem; }
+
+.position-3 {
+  grid-area: post-3; }
+
+.position-4 {
+  grid-area: post-4; }
+
+.position-2 img, .position-2 .adventure-overlay, .position-3 img, .position-3 .adventure-overlay, .position-4 img, .position-4 .adventure-overlay {
+  height: 240px; }
+
+.position-3 .adventure-heading, .position-4 .adventure-heading {
+  font-size: 1.5rem; }
+
 .adventure-block {
   width: 100%;
   position: relative; }
@@ -658,42 +731,15 @@ a.stuff-btn {
        object-fit: cover; }
 
 .overlay {
-  width: 100%;
-  height: 500px;
-  background: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  top: 0; }
-
-.adventure-heading {
-  line-height: 1.2;
-  letter-spacing: 0.13rem; }
+  height: 500px; }
 
 .adventure-cta {
-  position: absolute;
-  top: 60px;
-  padding: 0 30px; }
+  top: 60px; }
   .adventure-cta h1 {
-    font-size: 3rem;
-    text-transform: unset; }
-    .adventure-cta h1 a {
-      color: #fff;
-      font-family: 'Merriweather light'; }
-      .adventure-cta h1 a:hover {
-        color: #f0e4d1; }
+    font-size: 3rem; }
 
 .read-adventure-btn {
-  display: block;
-  border: 1px solid #fff;
-  margin-top: 45px;
-  width: 150px;
-  padding: 5px 0;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff; }
-  .read-adventure-btn:hover {
-    background: #248A83;
-    border-color: #248A83;
-    color: #fff; }
+  margin-top: 45px; }
 
 .lrg-img-wrapper img {
   width: 100%;
