@@ -130,8 +130,14 @@ a.stuff-btn {
 }
 .position-2 {
     grid-area: post-2;
+    img {
+        object-position: center 85%;
+    }
     .adventure-heading {
         font-size: 2rem;
+    }
+    .read-adventure-btn {
+        margin-top: 6%;
     }
 }
 .position-3 {
@@ -143,7 +149,7 @@ a.stuff-btn {
 
 .position-2, .position-3, .position-4 {
     img, .adventure-overlay {
-        height: 240px;
+        height: 100%;
     }
 }
 

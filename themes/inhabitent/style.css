@@ -739,8 +739,13 @@ a.stuff-btn {
 
 .position-2 {
   grid-area: post-2; }
+  .position-2 img {
+    -o-object-position: center 85%;
+       object-position: center 85%; }
   .position-2 .adventure-heading {
     font-size: 2rem; }
+  .position-2 .read-adventure-btn {
+    margin-top: 6%; }
 
 .position-3 {
   grid-area: post-3; }
@@ -749,7 +754,7 @@ a.stuff-btn {
   grid-area: post-4; }
 
 .position-2 img, .position-2 .adventure-overlay, .position-3 img, .position-3 .adventure-overlay, .position-4 img, .position-4 .adventure-overlay {
-  height: 240px; }
+  height: 100%; }
 
 .position-3 .adventure-heading, .position-4 .adventure-heading {
   font-size: 1.5rem; }
