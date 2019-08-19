@@ -35,8 +35,9 @@ into here. Know as the loop -->
                 <p>No posts found</p>
         <?php endif; ?>
     </section>
-    
-    <?php dynamic_sidebar('sidebar-1'); ?>
+    <section class="the-sidebar">
+        <?php dynamic_sidebar('sidebar-1'); ?>
+    </section>
     
 </main>
 

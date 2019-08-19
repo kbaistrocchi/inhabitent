@@ -1,3 +1,35 @@
-#sidebar {
-    padding: 35px auto;
+.the-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    padding: 30px 0 0 4%;
+}
+
+.widget-title {
+    margin-bottom: 20px;
+}
+
+.contact-info-sidebar {
+    display: grid;
+    grid-template: 3rem 3rem 3rem / 30px 1fr;
+    align-items: self-start;
+    i {
+        margin-top: 7px;
+    }
+    .fa-phone {
+        margin-right: 14px;
+    }
+    a {
+        font-family: 'Merriweather light';
+    }
+}
+
+// Business Hours Widget
+.business-hours-class {
+    margin-top: 40px;
+    line-height: 3rem;
+}
+
+.day-of-week {
+    font-family: 'Merriweather bold';
 }

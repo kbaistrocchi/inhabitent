@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main class="page-sidebar-content-wrapper all-page-wrapper">
-    <section class="page-content-wrapper">
+    <section class="posts-content-wrapper">
         <?php
         if( have_posts() ) :   // checks if pages are available if true, on to loop
             // THE WP LOOP
@@ -19,7 +19,10 @@
                 <p>No posts found</p>
         <?php endif; ?>
     </section>
-    <?php get_sidebar(); ?>
+    <section class="the-sidebar">
+        <?php dynamic_sidebar('sidebar-1'); ?>
+    </section>
+    
 </main>  
 
 

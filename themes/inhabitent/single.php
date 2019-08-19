@@ -49,8 +49,9 @@
         
        
     </section>
-    
-    <?php dynamic_sidebar('sidebar-1'); ?>
+    <section class="the-sidebar">
+        <?php dynamic_sidebar('sidebar-1'); ?>
+    </section>
     
 </main>
 

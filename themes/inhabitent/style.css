@@ -159,9 +159,9 @@ body {
   margin: 40px 55px 0 55px; }
 
 .page-sidebar-content-wrapper {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr minmax(300px, 20%); }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .adventures-teaser {
   display: grid;
@@ -269,7 +269,7 @@ footer {
           flex-direction: column;
   min-width: 210px;
   padding-right: 7%; }
-  .contact-info .fa-envelope {
+  .contact-info .fa-envelope, .contact-info .fa-map-marker-alt {
     padding-right: 7px; }
   .contact-info .fa-phone {
     padding-left: 7px; }
@@ -294,8 +294,39 @@ footer .hours {
 .copyright {
   text-align: center; }
 
-#sidebar {
-  padding: 35px auto; }
+.the-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 27%;
+  padding: 30px 0 0 4%; }
+
+.widget-title {
+  margin-bottom: 20px; }
+
+.contact-info-sidebar {
+  display: grid;
+  grid-template: 3rem 3rem 3rem / 30px 1fr;
+  -webkit-box-align: self-start;
+      -ms-flex-align: self-start;
+          align-items: self-start; }
+  .contact-info-sidebar i {
+    margin-top: 7px; }
+  .contact-info-sidebar .fa-phone {
+    margin-right: 14px; }
+  .contact-info-sidebar a {
+    font-family: 'Merriweather light'; }
+
+.business-hours-class {
+  margin-top: 40px;
+  line-height: 3rem; }
+
+.day-of-week {
+  font-family: 'Merriweather bold'; }
 
 .wpcf7-form label {
   font-family: 'Novecento';
@@ -390,6 +421,7 @@ footer .hours {
         color: #f0e4d1; }
 
 .posts-content-wrapper {
+  width: 73%;
   padding: 30px 5% 80px 0;
   border-right: 1px solid #e1e1e1; }
 

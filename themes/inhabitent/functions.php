@@ -56,10 +56,12 @@ function inhabitent_sidebar_widget() {
         'class' => 'the-sidebar',
         'before_widget' => '<aside id="%1$s" class="%2$s">',
         'after_widget' => '</aside>',
-        'before_title' => '<h2 class="widget-title">',
-        'after_title' => '</h2>'
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>'
     ));
 }
+
+add_action('widgets_init', 'inhabitent_sidebar_widget');
 
 // Modify 'Read More' Link
 
@@ -124,9 +126,6 @@ function inhabitent_register_taxonomies() {
     ));
 }
 add_action('init', 'inhabitent_register_taxonomies');
-
-// Add sidebar
-add_action('widgets_init', 'inhabitent_sidebar_widget');
 
 
 // Change login logo

@@ -15,9 +15,9 @@ body {
 
 // Add sidebar grid template to all page.phps
 .page-sidebar-content-wrapper {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr minmax(300px, 20%);
+    display: flex;
+    // grid-template-rows: 1fr;
+    // grid-template-columns: 1fr minmax(300px, 20%);
 }
 
 // Grid layout for Front Page - Adventures
