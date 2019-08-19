@@ -38,22 +38,22 @@
         <div class="stuff-product-card margin-right-card">
             <img src="<?php echo get_template_directory_uri(); ?>/images/product-type-icons/do.svg"  class="stuff-icon" alt="do stuff map icon">
             <p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
-            <a href="<?php echo get_term_link($terms[0]); ?>" class="stuff-btn"><?php echo $terms[0]->name; ?> Stuff</a>
+            <a href="<?php echo get_term_link($terms[0]); ?>" class="stuff-btn green-btn"><?php echo $terms[0]->name; ?> Stuff</a>
         </div>
         <div class="stuff-product-card margin-right-card">
             <img src="<?php echo get_template_directory_uri(); ?>/images/product-type-icons/eat.svg"  class="stuff-icon" alt="do stuff map icon">
             <p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
-            <a href="<?php echo get_term_link($terms[1]); ?>" class="stuff-btn"><?php echo $terms[1]->name; ?> Stuff</a>
+            <a href="<?php echo get_term_link($terms[1]); ?>" class="stuff-btn green-btn"><?php echo $terms[1]->name; ?> Stuff</a>
         </div>
         <div class="stuff-product-card margin-right-card">
             <img src="<?php echo get_template_directory_uri(); ?>/images/product-type-icons/sleep.svg"  class="stuff-icon" alt="do stuff map icon">
             <p>Get a good night's rest in the wild in a home away from home that travels well.</p>
-            <a href="<?php echo get_term_link($terms[2]); ?>" class="stuff-btn"><?php echo $terms[2]->name; ?> Stuff</a>
+            <a href="<?php echo get_term_link($terms[2]); ?>" class="stuff-btn green-btn"><?php echo $terms[2]->name; ?> Stuff</a>
         </div>
         <div class="stuff-product-card">
             <img src="<?php echo get_template_directory_uri(); ?>/images/product-type-icons/wear.svg"  class="stuff-icon" alt="do stuff map icon">
             <p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
-            <a href="<?php echo get_term_link($terms[3]); ?>" class="stuff-btn"><?php echo $terms[3]->name; ?> Stuff</a>
+            <a href="<?php echo get_term_link($terms[3]); ?>" class="stuff-btn green-btn"><?php echo $terms[3]->name; ?> Stuff</a>
         </div>
 
     </section>
@@ -112,6 +112,7 @@
                 $i++;
             endwhile; ?>
     </section>
+    <a href="<?php echo get_post_type_archive_link('adventures'); ?>" class="green-btn more-adventures">More Adventures</a>
                
          
 

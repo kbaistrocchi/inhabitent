@@ -166,11 +166,11 @@ body {
 .adventures-teaser {
   display: grid;
   grid-gap: 20px;
-  grid-template: calc(50% - 10px) calc(50% - 10px)/50% 25% 25%;
+  grid-template: calc(50% - 10px) calc(50% - 10px)/calc(50% - 10px) repeat(2, calc(25% - 15px));
   grid-template-areas: 'post-1 post-2 post-2' 'post-1 post-3 post-4';
   width: 100%;
   height: 500px;
-  margin-bottom: 120px; }
+  margin-bottom: 30px; }
 
 .adventure-grid {
   display: grid;
@@ -385,6 +385,16 @@ footer .hours {
     color: #fff;
     background: #248A83; }
 
+.green-btn {
+  background: #248A83;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 5px; }
+  .green-btn:hover {
+    background: #19625d;
+    color: #fff; }
+
 .read-adventure-btn {
   display: block;
   border: 1px solid #fff;
@@ -595,7 +605,7 @@ footer .hours {
   margin-top: 20px; }
 
 .front-pg-wrapper {
-  margin: 0 5%; }
+  margin: 0 5% 80px 5%; }
 
 .front-hero-wrapper {
   color: #fff;
@@ -658,15 +668,8 @@ footer .hours {
 .stuff-icon {
   width: 70px; }
 
-a.stuff-btn {
-  background: #248A83;
-  color: #fff;
-  text-transform: uppercase;
-  width: 130px;
-  white-space: nowrap;
-  padding: 5px; }
-  a.stuff-btn:hover {
-    background: #19625d; }
+.stuff-btn {
+  width: 130px; }
 
 .inhab-journal-teaser {
   display: -webkit-box;
@@ -758,6 +761,10 @@ a.stuff-btn {
 
 .position-3 .adventure-heading, .position-4 .adventure-heading {
   font-size: 1.5rem; }
+
+a.more-adventures {
+  font-size: 1.2rem;
+  padding: 1% 2.5%; }
 
 .adventure-block {
   width: 100%;

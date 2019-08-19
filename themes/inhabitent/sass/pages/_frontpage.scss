@@ -1,5 +1,5 @@
 .front-pg-wrapper {
-    margin: 0 5%;
+    margin: 0 5% 80px 5%;
 }
 
 
@@ -47,17 +47,10 @@
     width: 70px;
 }
 
-a.stuff-btn {
-    background: $green;
-    color: #fff;
-    text-transform: uppercase;
+.stuff-btn {
     width: 130px;
-    white-space: nowrap;
-    padding: 5px;
-    &:hover {
-        background: darken($green, 10%);
-    }
 }
+
 //  INHABITENT JOURNAL TEASER
 
 .inhab-journal-teaser{
@@ -157,4 +150,9 @@ a.stuff-btn {
     .adventure-heading {
         font-size: 1.5rem;
     }
+}
+
+a.more-adventures {
+    font-size: 1.2rem;
+    padding: 1% 2.5%;
 }

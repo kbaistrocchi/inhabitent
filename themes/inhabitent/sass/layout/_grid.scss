@@ -25,12 +25,12 @@ body {
     display: grid;
     grid-gap: 20px;
 
-    grid-template: calc(50% - 10px) calc(50% - 10px) / 50% 25% 25%;
+    grid-template: calc(50% - 10px) calc(50% - 10px) / calc(50% - 10px) repeat(2, calc(25% - 15px));
     grid-template-areas: 'post-1 post-2 post-2'
                          'post-1 post-3 post-4';
     width: 100%;
     height: 500px;
-    margin-bottom: 120px;
+    margin-bottom: 30px;
 }
 
 

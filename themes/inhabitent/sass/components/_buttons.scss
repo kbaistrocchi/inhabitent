@@ -36,6 +36,18 @@
     }
 }
 
+.green-btn {
+    background: $green;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 5px;
+    &:hover {
+        background: darken($green, 10%);
+        color: #fff;
+    }
+}
+
 // Adventure Read More Button
 
 .read-adventure-btn {
