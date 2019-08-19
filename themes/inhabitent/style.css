@@ -303,9 +303,10 @@ footer .hours {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 27%;
-  padding: 30px 0 0 4%; }
+  padding: 45px 0 0 4%; }
 
 .widget-title {
+  font-size: 1.5rem;
   margin-bottom: 20px; }
 
 .contact-info-sidebar {
@@ -483,10 +484,8 @@ footer .hours {
   margin-left: calc(-50vw + 50%);
   margin-bottom: 30px; }
 
-.page-content-wrapper {
-  padding: 35px 0 80px 0; }
-  .page-content-wrapper h2, .page-content-wrapper h3, .page-content-wrapper p {
-    margin-bottom: 15px; }
+.page-content-wrapper h2, .page-content-wrapper h3, .page-content-wrapper p {
+  margin-bottom: 15px; }
 
 .archive-header {
   text-align: center;

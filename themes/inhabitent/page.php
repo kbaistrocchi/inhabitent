@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 
 <main class="page-sidebar-content-wrapper all-page-wrapper">
-    <section class="posts-content-wrapper">
+    <section class="posts-content-wrapper page-content-wrapper">
         <?php
         if( have_posts() ) :   // checks if pages are available if true, on to loop
             // THE WP LOOP
             while( have_posts() ) :   // while there are posts, runs as many times as are posts
             the_post(); ?>          <!-- load all posts, needed to make loop run -->
-        <h2><?php the_title(); ?></h2>
+        <h1><?php the_title(); ?></h1>
         <?php the_content(); ?>
 
             <!-- end of wp loop -->
