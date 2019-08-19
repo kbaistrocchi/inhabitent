@@ -224,7 +224,7 @@ body {
   .header-white a {
     color: white; }
     .header-white a:hover {
-      color: #d99054; }
+      color: #f0e4d1; }
 
 footer {
   height: 300px;
@@ -348,8 +348,10 @@ footer .hours {
 .wpcf7-submit {
   color: #fff;
   background: #248A83;
-  width: 75px;
-  height: 30px;
+  font-size: 0.9rem;
+  width: 100px;
+  height: 40px;
+  padding: 10px 12px;
   text-transform: uppercase; }
 
 .comments h2 {
