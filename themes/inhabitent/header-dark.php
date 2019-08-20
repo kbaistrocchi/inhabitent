@@ -15,7 +15,12 @@
 
 <header class="header-white">
 <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent-white.svg" alt="tent logo"></a>
-        <?php wp_nav_menu( array(
-            'theme_location' => 'primary'
-        )); ?>
+        <nav>
+            <?php wp_nav_menu( array(
+                'theme_location' => 'primary'
+            )); ?>
+            <div class="header-search">
+                <?php get_search_form();?>
+            </div>
+        </nav>
     </header>

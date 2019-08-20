@@ -140,6 +140,17 @@ p {
   font-family: 'Merriweather light';
   text-transform: none; }
 
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+label {
+  display: none; }
+
+.showing {
+  display: inline-block; }
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -17,6 +17,7 @@
 // adds script and stylesheets
 function inhabitent_files() {
     // 1st - , 2nd - location of files but use dynamically...
+    wp_enqueue_script('navigation-js', get_template_directory_uri() . '/js/navigation.js', array('jquery'), null, true);
     // use wp method to get this info - find root then find .css file
     wp_enqueue_style('inhabitent_styles', get_stylesheet_uri('/build/css/style.min.css'), NULL, microtime());
     // microtime forces browser to reload all info everytime instead of caching
