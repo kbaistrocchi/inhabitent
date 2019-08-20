@@ -1,1 +1,0 @@
-<div class="all-page-wrapper"></div>
