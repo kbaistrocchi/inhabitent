@@ -144,19 +144,15 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  nav input[type=search] {
+    border: none;
+    height: 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    width: 200px; }
 
 label {
   display: none; }
-
-input[type=search] {
-  border: none;
-  height: 2rem;
-  font-size: 1rem;
-  text-transform: uppercase;
-  width: 200px; }
-
-.showing {
-  display: inline-block; }
 
 body {
   display: -webkit-box;
@@ -395,6 +391,7 @@ img.category-icon {
   width: 130px; }
 
 .wpcf7-form label {
+  display: inline-block;
   font-family: 'Novecento';
   text-transform: uppercase; }
   .wpcf7-form label span {
@@ -872,3 +869,13 @@ a.more-adventures {
 
 .four-0-four-search-form label {
   display: block; }
+
+.four-0-four-search-form input[type=search] {
+  border: 1px solid #e1e1e1;
+  background-color: #f4f4f4;
+  height: 2rem;
+  font-size: 1rem;
+  text-transform: unset;
+  width: 200px;
+  padding: 4px;
+  font-family: 'Merriweather light'; }

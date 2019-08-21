@@ -1,19 +1,23 @@
 nav {
     display: flex;
+    
+    
+    input[type=search] {
+        border: none;
+        height: 2rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+        width: 200px;
+    }
+  
 
 }
 
 label {
     display: none;
 }
-input[type=search] {
-    border: none;
-    height: 2rem;
-    font-size: 1rem;
-    text-transform: uppercase;
-    width: 200px;
-}
+// .showing {
+//     display: inline-block;
+// }
 
-.showing {
-    display: inline-block;
-}
+

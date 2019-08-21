@@ -11,4 +11,14 @@
     label {
         display: block;
     }
+    input[type=search] {
+        border: $solid-border;
+        background-color: #f4f4f4;
+        height: 2rem;
+        font-size: 1rem;
+        text-transform: unset;
+        width: 200px;
+        padding: 4px;
+        font-family: 'Merriweather light';
+    }
 }

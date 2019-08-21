@@ -156,10 +156,10 @@ function inhabitent_login_logo() {
     <style type="text/css">
         #login h1 a, .login h1 a {
             background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text-dark.svg);
-		height:65px;
-		width:250px;
-		background-size: 250px 65px;
-		background-repeat: no-repeat;
+            height:65px;
+            width:250px;
+            background-size: 250px 65px;
+            background-repeat: no-repeat;
         	padding-bottom: 30px;
         }
     </style>
@@ -188,13 +188,6 @@ function inhabitent_favicon() {
 }
 
 add_action('wp_head', 'inhabitent_favicon');
-
-// Remove Widget Title
-// function remove_title() {
-//     return null;
-// }
-
-// add_filter('widget_title', 'remove_title');
 
 
 ?>

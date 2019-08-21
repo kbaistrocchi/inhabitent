@@ -10,13 +10,13 @@
       event.preventDefault();
       const $label = $(this).siblings('label');
       $label.animate({ width: 'toggle' });
-      $label.addClass('showing');
+      $label.toggleClass('showing');
       $label.children('[type="search"]').focus();
     });
 
     $('.search-field').on('blur', function() {
       if ($(this).val() === '') {
-        $('.header-search label').animate({ width: 'hide' });
+        $('.header-search label').animate({ width: 'hide' }).toggleClass('showing');
       }
     });
   });
