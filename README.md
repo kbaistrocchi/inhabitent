@@ -10,16 +10,11 @@ To run Gulp:
 Personal Learning
 A lot!
 
-Created a custom widget for category cards displayed on the font-page. This widget requires a media uploader and some manipulation of the plugin that we built in class.
+I created a custom widget called Category Card so that the end user can edit the text, image and button text of each category card on the front page. This widget required a media uploader and some manipulation of the plugin that we built in class.
 
-Currently, I'm only able to load the widget in the sidebar. However, I did find a workaround with another plugin called 'amr shortcode any widget'.
+Currently, I'm only able to load the widget in a sidebar and not as a block on a page or post. To work around this, I created a new sidebar specifically to display these widgets and load the sidebar on the frontpage.
 
-In order to use my custom widget, Category Cards:
-1. Drag and drop it into the sidebar.
+As an end user, to use the Category Card widget: 
+1. Navigate to the widgets area on the Dashboard and drag and drop the Category Card widget into the Front Page Widget Display.
 2. Fill in the required fields.
-3. Check to ensure it is displaying properly by visiting a page that loads the sidebar (Journal, Posts or Find Us).
-4. Once satisfied, drag the widget out of the sidebar and into the amr sidebar.
-5. Navigate to the Gutenberg editor on the page or post that you'd like to use the widget.
-6. Add a shortcode element block and type the following:
-[do_widget 'widget name']
-7. Update/Publish the page and the widget should appear as a category card.
+3. View the Front Page to ensure it's working.

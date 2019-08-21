@@ -5,6 +5,10 @@
         <h2>Oops! That page cant' be found.</h2>
         <p>It looks like nothing was found at this location. 
             Maybe try one of the links below or a search.</p>
+        <div class="four-0-four-search-form">
+            <?php get_search_form();?>
+        </div>
+            
 
         <h2>Recent Posts</h2>
         <?php

@@ -148,6 +148,13 @@ nav {
 label {
   display: none; }
 
+input[type=search] {
+  border: none;
+  height: 2rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  width: 200px; }
+
 .showing {
   display: inline-block; }
 
@@ -859,3 +866,9 @@ a.more-adventures {
 
 .four-0-four a {
   font-family: 'Merriweather light'; }
+
+.four-0-four-search-form i {
+  display: none; }
+
+.four-0-four-search-form label {
+  display: block; }
