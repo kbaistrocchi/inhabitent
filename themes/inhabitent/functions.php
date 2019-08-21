@@ -49,7 +49,7 @@ add_action('after_setup_theme', 'inhabitent_features');
 // Initialize sidebar
 
 function inhabitent_sidebar_widget() {
-    // us wp function which takes associative array as paramenter - see docs
+    // Page.php Sidebar
     register_sidebar( array(
         'name' => esc_html('Sidebar'),
         'id' => 'sidebar-1',
@@ -60,6 +60,20 @@ function inhabitent_sidebar_widget() {
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>'
     ));
+
+    // Front-page Sidebar
+    register_sidebar( array(
+        'name' => esc_html('Front Page Widget Display'),
+        'id' => 'sidebar-frontpg',
+        'description' => 'An area to display category cards on the front page.',
+        'class' => 'front-pg-sidebar',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<span class="hide-title">',
+        'after_title' => '</span>' 
+    ));
+
+
 }
 
 add_action('widgets_init', 'inhabitent_sidebar_widget');
@@ -174,6 +188,13 @@ function inhabitent_favicon() {
 }
 
 add_action('wp_head', 'inhabitent_favicon');
+
+// Remove Widget Title
+// function remove_title() {
+//     return null;
+// }
+
+// add_filter('widget_title', 'remove_title');
 
 
 ?>

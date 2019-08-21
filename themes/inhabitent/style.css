@@ -340,6 +340,53 @@ footer .hours {
 .day-of-week {
   font-family: 'Merriweather bold'; }
 
+.category-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 75px; }
+
+.category-card-class {
+  width: 23%; }
+
+.hide-title {
+  display: none; }
+
+.category-card {
+  border: 1px solid #e1e1e1;
+  border-top: 5px solid #e1e1e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  padding: 10px; }
+  .category-card p {
+    margin: 5% 0; }
+  .category-card:hover {
+    border-color: #d99054; }
+
+img.category-icon {
+  width: 70px; }
+
+.category-btn {
+  width: 130px; }
+
 .wpcf7-form label {
   font-family: 'Novecento';
   text-transform: uppercase; }

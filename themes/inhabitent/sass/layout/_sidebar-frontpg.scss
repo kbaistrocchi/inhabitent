@@ -1,0 +1,43 @@
+.category-card-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 75px;
+
+}
+
+.category-card-class {
+    width: 23%;
+}
+
+
+.hide-title {
+    display: none;
+}
+
+.category-card {
+    border: $solid-border;
+    border-top: $thick-border;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    p {
+        margin: 5% 0;
+    }
+    &:hover {
+        border-color: $orange;
+    }
+}
+
+img.category-icon {
+    width: 70px;
+}
+
+.category-btn {
+    width: 130px;
+}

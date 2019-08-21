@@ -26,6 +26,10 @@
     <!-- Shop Stuff Section -->
 
     <h1 class="front-header">Shop Stuff</h1>
+    <section class='category-card-container'>
+        <?php dynamic_sidebar('sidebar-frontpg'); ?>
+    </section>
+    
     <section class="shop-stuff-menu">
         
         <!-- Get product catagories -->
