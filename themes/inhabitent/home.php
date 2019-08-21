@@ -11,7 +11,7 @@ into here. Know as the loop -->
             the_post(); ?>          <!-- load all posts, needed to make loop run -->
 
         <div class="journal-post-head">
-            <h2 class="journal-post-title"><?php the_title(); ?></h2>
+            <h2 class="journal-post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             <?php if ( has_post_thumbnail() ) : ?>
                 <div class="featured-image-wrapper journal-img-wrapper">
                     <?php the_post_thumbnail(); ?>

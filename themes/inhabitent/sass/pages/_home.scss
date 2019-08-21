@@ -26,6 +26,13 @@
     padding: 2% 3%;
     max-width: 70%;
     line-height: initial;
+    a {
+        color: #fff;
+        font-family: 'Novecento demibold';
+        &:hover {
+            color: $yellow;
+        }
+    }
 
 }
 

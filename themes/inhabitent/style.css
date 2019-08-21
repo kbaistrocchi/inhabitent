@@ -520,6 +520,11 @@ img.category-icon {
   padding: 2% 3%;
   max-width: 70%;
   line-height: initial; }
+  .journal-post-title a {
+    color: #fff;
+    font-family: 'Novecento demibold'; }
+    .journal-post-title a:hover {
+      color: #f0e4d1; }
 
 .journal-img-wrapper img {
   max-width: 100%;
