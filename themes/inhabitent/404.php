@@ -39,6 +39,16 @@
         <div class="four-0-four-block four-0-four-archives">
             <h2>Archives</h2>
             <p>Try looking in the monthly archives </p>
+            <select name="archive-dropdown" class="archive-select">
+                <option>Select Month</option>
+                <?php
+                wp_get_archives(array(
+                    'type' => 'monthly',
+                    'format' => 'option',
+
+                )); ?>
+            </select>
+            
         </div>
         
         
