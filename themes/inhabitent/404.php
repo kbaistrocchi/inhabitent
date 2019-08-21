@@ -2,33 +2,46 @@
 
 <main class="page-sidebar-content-wrapper all-page-wrapper">
     <section class="posts-content-wrapper">
-        <h2>Oops! That page cant' be found.</h2>
+        <h1 class="four-0-four-block">Oops! That page cant' be found.</h1>
         <p>It looks like nothing was found at this location. 
             Maybe try one of the links below or a search.</p>
-        <div class="four-0-four-search-form">
+        <div class="four-0-four-search-form four-0-four-block">
             <?php get_search_form();?>
         </div>
             
+        <div class="four-0-four-block four-0-four-posts">
+            <h2>Recent Posts</h2>
+            <?php
+                // Custom Loop Recent Journal Entries
+                $args = array(
+                    'post_type' => 'post',
+                    'numberposts' => 5,
+                    'order' => 'DESC'
+                );
+                $posts = get_posts($args);
 
-        <h2>Recent Posts</h2>
-        <?php
-            // Custom Loop Recent Journal Entries
-            $args = array(
-                'post_type' => 'post',
-                'numberposts' => 5,
-                'order' => 'DESC'
-            );
-            $posts = get_posts($args);
+                foreach($posts as $post) :
+                    setup_postdata($post); ?>  
+                    <p><a href="<?php the_guid(); ?>"><?php the_title(); ?></a></p>
+                <?php endforeach; ?>
+        </div>
+                
+        <div class="four-0-four-block four-0-four-categories">
+            <h2>Most used categories</h2>
+            <?php 
+            wp_list_categories(array(
+                'order' => 'DESC',
+                'show_count' => true,
+                'title_li' => ''
+            )); ?>
+        </div>
 
-            foreach($posts as $post) :
-                setup_postdata($post); ?>  
-                <p class="four-0-four"><a href="<?php the_guid(); ?>"><?php the_title(); ?></a></p>
-            <?php endforeach; ?>
-
-
-        <h2>Most used categories</h2>
-        <h2>Archives</h2>
-        <p>Try looking in the monthly archives </p>
+        <div class="four-0-four-block four-0-four-archives">
+            <h2>Archives</h2>
+            <p>Try looking in the monthly archives </p>
+        </div>
+        
+        
        
     </section>
     <section class="the-sidebar">
