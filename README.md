@@ -42,3 +42,4 @@ Future Developments:
 - Find a way to load the Category Card widget into a post without a sidebar.
 - Refactor CSS to be more reusable throughout the theme.
 - Use jQuery to load different headers (currently the different headers are controlled with CSS)
+- Use a loop and conditional statements to display product_type pages (rather than hard code the text)
