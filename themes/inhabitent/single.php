@@ -40,6 +40,7 @@
         </div>
         <section class="comments">
             <h2><?php echo get_comments_number(); ?> comments</h2>
+            <p><?php wp_list_comments(); ?> </p>
             <?php comments_template(); ?>
         </section>
     
