@@ -37,7 +37,8 @@ As an end user, to use the Category Card widget:
 After building and styling most of the main pages I realized I was re-writing a lot of the same code. In the future I need to take a closer look at the overall site and plan my styling a little better in order to reduce the amount of code written.
 
 Future Developments:
-a. Add an alt text field to the Category Card Image loader.
-b. Add break points to make the site more responsive.
-c. Find a way to load the Category Card widget into a post without a sidebar.
-d. Refactor CSS to be more reusable throughout the theme.
+- Add an alt text field to the Category Card Image loader.
+- Add break points to make the site more responsive.
+- Find a way to load the Category Card widget into a post without a sidebar.
+- Refactor CSS to be more reusable throughout the theme.
+- Use jQuery to load different headers (currently the different headers are controlled with CSS)

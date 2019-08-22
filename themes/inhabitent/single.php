@@ -44,8 +44,15 @@
         <section class="comments">
             <h2><?php echo get_comments_number(); ?> comments</h2>
             <?php comments_template(); ?>
-            <?php comment_form(); ?>
+            <!-- <?php comment_form(); ?> -->
         </section>
+        <!-- // 'comment_field' => '<label for="comment-textfield">Comment</label><textarea id="comment-textfield" cols="30" rows="10" required="required"></textarea>',
+                // 'author' => '<p><label for="comment-author">Name</label><input id="comment-author" type="text"></p>',
+                // 'email' => 'Email',
+                // 'url' => 'Website',
+                // 'logged_in_as' => '',
+                // 'comment_notes_before' => 'Want to join the discussion? Feel free to contribute!' -->
+    
         
        
     </section>

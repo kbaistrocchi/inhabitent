@@ -28,11 +28,11 @@
     }
 }
 
-// date.php
-.archive-header.date-archive {
+// Archive Pages
+div.archive-header {
     border-bottom: $solid-border;
     h1 {
-        text-align: left
+        text-align: left;
+        margin-bottom: unset;
     }
-    
 }

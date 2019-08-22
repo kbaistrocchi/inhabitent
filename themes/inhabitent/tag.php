@@ -2,8 +2,8 @@
 
 <main class="page-sidebar-content-wrapper all-page-wrapper">
     <section class="posts-content-wrapper">
-        <div class="archive-header ">
-            <h1>Month: <?php the_time('F, Y'); ?></h1>
+        <div class="archive-header">
+            <h1>Tag: <?php echo single_tag_title(); ?></h1>
         </div>
     
         <?php
