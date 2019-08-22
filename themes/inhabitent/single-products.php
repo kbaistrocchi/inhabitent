@@ -1,11 +1,9 @@
-<!-- wp goes into database, locates title, content and outputs
-into here. Know as the loop -->
+
 <?php get_header(); ?>
 
 <div class="all-page-wrapper">
     <?php
-    if( have_posts() ) :   // checks if posts are available if true, on to loop
-        // THE WP LOOP
+    if( have_posts() ) : 
         while( have_posts() ) :   
         the_post(); ?>  
         <main class="single-product-content">
@@ -14,7 +12,7 @@ into here. Know as the loop -->
             </div>
             <section class="single-product-info">
                 <h2><?php the_title(); ?></h2>
-                <!-- use the custom fields plugin built in function -->
+                <!-- use the custom fields plugin -->
                 <span><?php echo '$' . get_field('price'); ?></span>
                 <?php the_content(); ?>
                 <div class="product-social-media-bts">
@@ -26,11 +24,6 @@ into here. Know as the loop -->
             </section>
         </main>
         
-                
-        
-
-
-        <!-- end of wp loop -->
         <?php endwhile; ?>
 
     <?php the_posts_navigation(); ?> 

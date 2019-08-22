@@ -43,15 +43,7 @@
             <?php comments_template(); ?>
             <!-- <?php comment_form(); ?> -->
         </section>
-        <!-- // 'comment_field' => '<label for="comment-textfield">Comment</label><textarea id="comment-textfield" cols="30" rows="10" required="required"></textarea>',
-                // 'author' => '<p><label for="comment-author">Name</label><input id="comment-author" type="text"></p>',
-                // 'email' => 'Email',
-                // 'url' => 'Website',
-                // 'logged_in_as' => '',
-                // 'comment_notes_before' => 'Want to join the discussion? Feel free to contribute!' -->
     
-        
-       
     </section>
     <section class="the-sidebar">
         <?php dynamic_sidebar('sidebar-1'); ?>

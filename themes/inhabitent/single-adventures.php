@@ -15,7 +15,6 @@ if( have_posts() ) :
         <h3>By <?php the_author(); ?></h3>
         <?php the_content(); ?>
 
-            <!-- end of wp loop -->
             <?php endwhile; ?>
 
 

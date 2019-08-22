@@ -12,7 +12,6 @@
         
         <?php the_content(); ?>
 
-        <!-- end of wp loop -->
         <?php endwhile; ?>
 
     <?php the_posts_navigation(); ?> 

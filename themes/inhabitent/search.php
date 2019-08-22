@@ -7,8 +7,7 @@
     </div>
     
         <?php
-        if( have_posts() ) :   
-            // THE WP LOOP
+        if( have_posts() ) :  
             while( have_posts() ) :   
             the_post(); ?>         
 
