@@ -4,10 +4,9 @@
 <main class="page-sidebar-content-wrapper all-page-wrapper">
     <section class="posts-content-wrapper">
         <?php
-        if( have_posts() ) :   // checks if posts are available if true, on to loop
-            // THE WP LOOP
-            while( have_posts() ) :   // while there are posts, runs as many times as are posts
-            the_post(); ?>          <!-- load all posts, needed to make loop run -->
+        if( have_posts() ) :   
+            while( have_posts() ) :   
+            the_post(); ?>    
 
         <div class="journal-post-head">
             <h2 class="journal-post-title"><?php the_title(); ?></h2>
@@ -26,11 +25,9 @@
             <h5>tagged <i class="fas fa-long-arrow-alt-right"></i> <?php the_tags(''); ?></h5>
         </div>
        
-
-            <!-- end of wp loop -->
             <?php endwhile; ?>
 
-        <?php the_posts_navigation(); ?> <!-- if too much content to load on page - can change amount in settings -->
+        <?php the_posts_navigation(); ?> 
 
         <?php else : ?>
                 <p>No posts found</p>

@@ -74,6 +74,18 @@ function inhabitent_sidebar_widget() {
         'after_title' => '</span>' 
     ));
 
+    // Footer Sidebar - for business hours widget
+    register_sidebar( array(
+        'name' => esc_html('Footer Widget Area'),
+        'id' => 'sidebar-footer',
+        'description' => 'A widget area to display business hours',
+        'class' => 'footer-sidebar',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>' 
+    ));
+
 
 }
 
@@ -189,26 +201,5 @@ function inhabitent_favicon() {
 }
 
 add_action('wp_head', 'inhabitent_favicon');
-
-// Add Custom Comments Field
-// change comment form fields order
-add_filter( 'comment_form_fields', 'mo_comment_fields_custom_order' );
-function mo_comment_fields_custom_order( $fields ) {
-	$comment_field = $fields['comment'];
-	$author_field = $fields['author'];
-	$email_field = $fields['email'];
-	$url_field = $fields['url'];
-	unset( $fields['comment'] );
-	unset( $fields['author'] );
-	unset( $fields['email'] );
-	unset( $fields['url'] );
-	// the order of fields is the order below, change it as needed:
-	$fields['comment'] = $comment_field;
-	$fields['author'] = $author_field;
-	$fields['email'] = $email_field;
-	$fields['url'] = $url_field;
-	// done ordering, now return the fields:
-	return $fields;
-}
 
 ?>

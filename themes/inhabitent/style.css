@@ -290,17 +290,12 @@ footer {
   .contact-info .fab {
     font-size: 1.1em; }
 
-footer .hours {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-width: 300px; }
-  footer .hours span {
-    font-family: 'Merriweather bold'; }
+.company-info .business-hours-class {
+  margin-top: 0;
+  line-height: 2.5rem; }
+  .company-info .business-hours-class h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0; }
 
 .logo-text-wrapper img {
   width: 200px; }

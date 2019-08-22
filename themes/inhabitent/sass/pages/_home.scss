@@ -44,7 +44,7 @@
 }
 
 .read-more-link {
-    @extend .read-more-btn;  // from _buttons.scss
+    @extend .read-more-btn;  
     display: block;
     width: 150px;
     padding: 1% 0;

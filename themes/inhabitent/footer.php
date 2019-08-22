@@ -15,12 +15,13 @@ wp_footer();
                 </ul>
             </div>
 
-            <div class='hours'>
-                <h3>Business Hours</h3>
+            <!-- <div class='hours'> -->
+                <?php dynamic_sidebar('sidebar-footer'); ?>
+                <!-- <h3>Business Hours</h3>
                 <p><span>Monday-Friday:</span> 9am to 5pm</p>
                 <p><span>Saturday:</span> 10am to 2pm</p>
-                <p><span>Sunday:</span> Closed</p>
-            </div>
+                <p><span>Sunday:</span> Closed</p> -->
+            <!-- </div> -->
         </div>
         
 

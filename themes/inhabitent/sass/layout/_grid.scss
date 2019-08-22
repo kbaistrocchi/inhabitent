@@ -1,5 +1,4 @@
 body {
-    // max-width: 1120px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -13,11 +12,9 @@ body {
 }
 
 
-// Add sidebar grid template to all page.phps
+// Add sidebar layout to all page.phps
 .page-sidebar-content-wrapper {
     display: flex;
-    // grid-template-rows: 1fr;
-    // grid-template-columns: 1fr minmax(300px, 20%);
 }
 
 // Grid layout for Front Page - Adventures
