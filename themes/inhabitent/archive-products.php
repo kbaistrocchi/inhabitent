@@ -10,7 +10,7 @@
         <?php 
         $terms = get_terms(array(
             'taxonomy' => 'product_type',
-            'hide_empty' => 0 // shows empty catagories
+            'hide_empty' => 0
         ));
 
         foreach($terms as $term) :
@@ -25,8 +25,7 @@
 
     <div class="archive-products-wrapper">
         <?php
-        if( have_posts() ) :  
-            // THE WP LOOP
+        if( have_posts() ) : 
             while( have_posts() ) :   
             the_post(); ?>  
             
@@ -40,20 +39,15 @@
                 <div class="product-info-container">
                 <p><?php the_title(); ?></p>
                 <hr>
-                <!-- use the custom fields plugin built in function -->
+                <!-- use the custom fields plugin -->
                 <p><?php echo '$' . get_field('price'); ?></p>
                 </div>
                 
             </div>       
 
-
-        <!-- <?php the_permalink(); ?> -->
-
-            <!-- end of wp loop -->
             <?php endwhile; ?>
 
         
-    
         <?php the_posts_navigation(); ?> 
 
         <?php else : ?>

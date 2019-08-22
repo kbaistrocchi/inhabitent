@@ -3,8 +3,7 @@
 <main class="page-sidebar-content-wrapper all-page-wrapper">
     <section class="posts-content-wrapper">
         <?php
-        if( have_posts() ) :   
-            // THE WP LOOP
+        if( have_posts() ) : 
             while( have_posts() ) :   
             the_post(); ?>         
 

@@ -15,7 +15,6 @@
 
         <?php endwhile; ?>
 
-    <!-- <?php the_posts_navigation(); ?>  -->
 
     <?php else : ?>
             <p>No posts found</p>
@@ -25,6 +24,7 @@
 
     <h1 class="front-header">Shop Stuff</h1>
     <section class='category-card-container'>
+        <!-- load Front Pg Sidebar to display widgets -->
         <?php dynamic_sidebar('sidebar-frontpg'); ?>
     </section>
 
@@ -64,7 +64,6 @@
                 'post_type' => 'adventures',
                 'posts_per_page' => 4,
             ));
-            // var_dump($adventure);
             $i = 1;
             while($adventure->have_posts()) :
                 $adventure->the_post();
@@ -83,22 +82,6 @@
             endwhile; ?>
     </section>
     <a href="<?php echo get_post_type_archive_link('adventures'); ?>" class="green-btn more-adventures">More Adventures</a>
-               
-         
-
-
- <!-- WP_Query Loop -->
- <!-- <?php 
-        $stuff = new WP_Query(array(
-            'post_type' => 'products',
-            'posts_per_page' => -1,  // -1 displays all 
-        ));
-        // -> arrow grabs a particular property (like dot notation)
-        while($stuff->have_posts()) :
-            echo $stuff->the_post(); 
-        endwhile;
-        ?> -->
-    
    
 
 </div>

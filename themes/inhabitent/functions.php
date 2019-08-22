@@ -1,40 +1,22 @@
 
 <?php 
 
-// filter stylesheet to point to minified CSS
-
-// function inhabitent_min_css() {
-//     // get_temp_dir - points to root directory 
-//     // so, if there is a file in root/build..., then return that stylesheet
-//     if ( file_exists( get_template_directory() . '/build/css/style.min.css')) {
-//         $stylesheet_uri = $stylesheet_dir_uri . '/build/css/style.min.css';
-//     }
-//     return $stylesheet_uri;
-// }
-
-// add_filter('stylesheet_uri', 'inhabitent_min_css');
-
-// adds script and stylesheets
+// Adds scripts and stylesheets
 function inhabitent_files() {
-    // 1st - , 2nd - location of files but use dynamically...
     wp_enqueue_script('navigation-js', get_template_directory_uri() . '/js/navigation.js', array('jquery'), null, true);
     wp_enqueue_script('archive-404-js', get_template_directory_uri() . '/js/archive-404.js', array('jquery'), null, true);
-    // use wp method to get this info - find root then find .css file
     wp_enqueue_style('inhabitent_styles', get_stylesheet_uri('/build/css/style.min.css'), NULL, microtime());
-    // microtime forces browser to reload all info everytime instead of caching
-
-    // load fonts
+    // Load fonts and icons
     wp_enqueue_style('fonts', "https://fonts.googleapis.com/css?family=Lato&display=swap");
     wp_enqueue_style('custom-fa', "https://use.fontawesome.com/releases/v5.8.2/css/all.css");
 };
 
-// this is called a hook;
 add_action('wp_enqueue_scripts', 'inhabitent_files');
 
-// adds theme support, ex title and tag, featured img
+
+// Add theme support, (title tag, featured img, nav menu)
 function inhabitent_features() {
     add_theme_support('post-thumbnails');
-    // add_image_size('square', 250, 250, true);
     add_theme_support('title-tag');
     register_nav_menus( array(
         'primary' => 'Primary Menu',
@@ -42,13 +24,10 @@ function inhabitent_features() {
     ));
 };
 
-// this function dynamically loads title and tag line and is better than the header version
-// after_theme_setup, function_name
 add_action('after_setup_theme', 'inhabitent_features'); 
 
 
-// Initialize sidebar
-
+// Initialize sidebars
 function inhabitent_sidebar_widget() {
     // Page.php Sidebar
     register_sidebar( array(
@@ -85,11 +64,10 @@ function inhabitent_sidebar_widget() {
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>' 
     ));
-
-
 }
 
 add_action('widgets_init', 'inhabitent_sidebar_widget');
+
 
 // Enable .svg uploads
 function cc_mime_types($mimes) {
@@ -98,8 +76,8 @@ function cc_mime_types($mimes) {
   }
 add_filter('upload_mimes', 'cc_mime_types');
 
-// Modify 'Read More' Link
 
+// Modify 'Read More' Link
 function inhabitent_read_more_link($more) {
     global $post;
     return ' [...]<a class="read-more-link" href="' . get_permalink($post->ID) . '" >Read More <i class="fas fa-long-arrow-alt-right"></i></a>';
@@ -109,7 +87,6 @@ add_filter('excerpt_more', 'inhabitent_read_more_link');
 
 
 // Initialize Custom Post-Type: Products
-
 function inhabitent_post_types() {
     register_post_type('products', array(
         'supports' => array('title', 'editor', 'thumbnail'),
@@ -145,12 +122,12 @@ function inhabitent_post_types() {
     ));
 }
 
-
 add_action('init', 'inhabitent_post_types');
+
 
 // Custom Taxonomies
 function inhabitent_register_taxonomies() {
-    register_taxonomy('product_type', 'products', array(   // 2nd param must relate to the post site name (above)
+    register_taxonomy('product_type', 'products', array(  
         'show_in_rest' => true,
         'hierarchical' => true,
         'public' => true,
@@ -181,6 +158,7 @@ function inhabitent_login_logo() {
 
 add_action('login_enqueue_scripts', 'inhabitent_login_logo');
 
+
 // Set login logo link destination
 function inhabitent_login_logo_url(){
     return home_url();
@@ -188,12 +166,14 @@ function inhabitent_login_logo_url(){
 
 add_filter('login_headerurl', 'inhabitent_login_logo_url');
 
-// Add hover text to login logo
+
+// Add title tag to login pg
 function inhabitent_login_logo_url_title() {
     return "InhabiTent Camping Supply Co.";
 }
 
 add_filter('login_title', 'inhabitent_login_logo_url_title');
+
 
 // Set Favicon
 function inhabitent_favicon() {

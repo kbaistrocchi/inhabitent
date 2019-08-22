@@ -14,14 +14,8 @@ wp_footer();
                     <li><a href='#'><i class="fab fa-google-plus-square"></i></a></li>
                 </ul>
             </div>
-
-            <!-- <div class='hours'> -->
                 <?php dynamic_sidebar('sidebar-footer'); ?>
-                <!-- <h3>Business Hours</h3>
-                <p><span>Monday-Friday:</span> 9am to 5pm</p>
-                <p><span>Saturday:</span> 10am to 2pm</p>
-                <p><span>Sunday:</span> Closed</p> -->
-            <!-- </div> -->
+              
         </div>
         
 
@@ -32,8 +26,6 @@ wp_footer();
     
     <p class="copyright">COPYRIGHT &copy 2019 inhabiTENT</p>
 
-    
-    
 
 </footer>
 

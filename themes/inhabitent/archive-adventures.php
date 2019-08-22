@@ -18,11 +18,9 @@
                     </div>
                 </div>        
             
-
-                <!-- end of wp loop -->
                 <?php endwhile; ?>
 
-            <?php the_posts_navigation(); ?> <!-- if too much content to load on page - can change amount in settings -->
+            <?php the_posts_navigation(); ?> 
 
             <?php else : ?>
                     <p>No posts found</p>
