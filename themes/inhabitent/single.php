@@ -21,7 +21,7 @@
         
         <div class="journal-post-text single-journal-text">
             <?php the_content(); ?>
-            <h5>posted in <i class="fas fa-long-arrow-alt-right"></i> <?php the_category(); ?></h5>
+            <h5>posted in <i class="fas fa-long-arrow-alt-right"></i> <?php the_category(', '); ?></h5>
             <h5>tagged <i class="fas fa-long-arrow-alt-right"></i> <?php the_tags(''); ?></h5>
         </div>
        
@@ -41,7 +41,6 @@
         <section class="comments">
             <h2><?php echo get_comments_number(); ?> comments</h2>
             <?php comments_template(); ?>
-            <!-- <?php comment_form(); ?> -->
         </section>
     
     </section>

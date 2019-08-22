@@ -43,3 +43,4 @@ Future Developments:
 - Refactor CSS to be more reusable throughout the theme.
 - Use jQuery to load different headers (currently the different headers are controlled with CSS)
 - Use a loop and conditional statements to display product_type pages (rather than hard code the text)
+- Category Card icon urls are not dynamically changing with server url changes and therefore don't always display. Need to find a fix for this in the future.

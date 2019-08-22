@@ -1,2 +1,2 @@
- 
+<?php comment_form(); ?>
 
