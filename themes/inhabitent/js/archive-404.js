@@ -1,6 +1,4 @@
 (function($) {
-    console.log('kayla')
-
     // Archive dropdown link
     const $archiveSelect = $('select')
     $archiveSelect.on('change', () => {
