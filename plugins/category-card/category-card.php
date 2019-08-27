@@ -101,7 +101,7 @@ class category_card extends WP_Widget {
                 'image' => '',
                 'tag_line' => 'Write something about your category here.',
                 'btn_txt' => 'Click Here',
-                'category_url' => 'ex: product-type/wear'
+                'category_url' => 'ex: product_type/wear'
             )
         );
 
