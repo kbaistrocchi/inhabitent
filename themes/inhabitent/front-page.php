@@ -49,8 +49,8 @@
                     </div>
                     <div class="journal-info">
                         <p><?php the_date('j F Y'); ?> / <?php echo get_comments_number(); ?> Comments</p>
-                        <h3><a href="<?php the_guid(); ?>"><?php the_title(); ?></a></h3>
-                        <a href="<?php the_guid(); ?>" class="read-entry-btn">Read Entry</a>
+                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                        <a href="<?php the_permalink(); ?>" class="read-entry-btn">Read Entry</a>
                     </div>
                 </div>
             <?php endforeach; ?>
