@@ -1,4 +1,3 @@
-
 <?php 
 
 // Adds scripts and stylesheets
